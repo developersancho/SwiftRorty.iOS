@@ -14,6 +14,19 @@
 		E2291D4427A5E90A006D3FD8 /* SwiftRorty_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D4327A5E90A006D3FD8 /* SwiftRorty_iOSTests.swift */; };
 		E2291D4E27A5E90A006D3FD8 /* SwiftRorty_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D4D27A5E90A006D3FD8 /* SwiftRorty_iOSUITests.swift */; };
 		E2291D5027A5E90A006D3FD8 /* SwiftRorty_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D4F27A5E90A006D3FD8 /* SwiftRorty_iOSUITestsLaunchTests.swift */; };
+		E2291D6C27A5F33F006D3FD8 /* CharactersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D6B27A5F33E006D3FD8 /* CharactersScreen.swift */; };
+		E2291D6E27A5F362006D3FD8 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D6D27A5F362006D3FD8 /* CharactersViewModel.swift */; };
+		E2555BFF27A87181007E5266 /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555BFE27A87181007E5266 /* PageInfo.swift */; };
+		E2555C0127A87209007E5266 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0027A87209007E5266 /* CharacterService.swift */; };
+		E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0227A87220007E5266 /* FavoriteDao.swift */; };
+		E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0427A87238007E5266 /* CharacterRepository.swift */; };
+		E2555C0727A87252007E5266 /* GetCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0627A87252007E5266 /* GetCharacters.swift */; };
+		E2555C0927A87292007E5266 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0827A87292007E5266 /* FavoritesScreen.swift */; };
+		E2555C0B27A872A2007E5266 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0A27A872A2007E5266 /* FavoritesViewModel.swift */; };
+		E2555C0D27A872D5007E5266 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0C27A872D5007E5266 /* SettingsScreen.swift */; };
+		E2555C0F27A872E4007E5266 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0E27A872E4007E5266 /* DetailScreen.swift */; };
+		E2555C1127A872F2007E5266 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C1027A872F2007E5266 /* HomeScreen.swift */; };
+		E2555C1327A872FF007E5266 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C1227A872FF007E5266 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,19 @@
 		E2291D4927A5E90A006D3FD8 /* SwiftRorty.iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRorty.iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2291D4D27A5E90A006D3FD8 /* SwiftRorty_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRorty_iOSUITests.swift; sourceTree = "<group>"; };
 		E2291D4F27A5E90A006D3FD8 /* SwiftRorty_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRorty_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2291D6B27A5F33E006D3FD8 /* CharactersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreen.swift; sourceTree = "<group>"; };
+		E2291D6D27A5F362006D3FD8 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		E2555BFE27A87181007E5266 /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		E2555C0027A87209007E5266 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		E2555C0227A87220007E5266 /* FavoriteDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDao.swift; sourceTree = "<group>"; };
+		E2555C0427A87238007E5266 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		E2555C0627A87252007E5266 /* GetCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacters.swift; sourceTree = "<group>"; };
+		E2555C0827A87292007E5266 /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
+		E2555C0A27A872A2007E5266 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		E2555C0C27A872D5007E5266 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		E2555C0E27A872E4007E5266 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		E2555C1027A872F2007E5266 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E2555C1227A872FF007E5266 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +120,10 @@
 		E2291D3127A5E908006D3FD8 /* SwiftRorty.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E2291D6327A5E992006D3FD8 /* core */,
+				E2291D5C27A5E941006D3FD8 /* data */,
+				E2291D5D27A5E948006D3FD8 /* domain */,
+				E2291D5E27A5E950006D3FD8 /* presentation */,
 				E2291D3227A5E908006D3FD8 /* SwiftRorty_iOSApp.swift */,
 				E2291D3427A5E908006D3FD8 /* ContentView.swift */,
 				E2291D3627A5E909006D3FD8 /* Assets.xcassets */,
@@ -125,6 +155,143 @@
 				E2291D4F27A5E90A006D3FD8 /* SwiftRorty_iOSUITestsLaunchTests.swift */,
 			);
 			path = SwiftRorty.iOSUITests;
+			sourceTree = "<group>";
+		};
+		E2291D5C27A5E941006D3FD8 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E2291D5F27A5E966006D3FD8 /* model */,
+				E2291D6027A5E96C006D3FD8 /* local */,
+				E2291D6127A5E973006D3FD8 /* remote */,
+				E2291D6227A5E979006D3FD8 /* repository */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		E2291D5D27A5E948006D3FD8 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0627A87252007E5266 /* GetCharacters.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		E2291D5E27A5E950006D3FD8 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E2291D6427A5E9A5006D3FD8 /* features */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		E2291D5F27A5E966006D3FD8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E2555BFD27A8716A007E5266 /* base */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E2291D6027A5E96C006D3FD8 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0227A87220007E5266 /* FavoriteDao.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		E2291D6127A5E973006D3FD8 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0027A87209007E5266 /* CharacterService.swift */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+		E2291D6227A5E979006D3FD8 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0427A87238007E5266 /* CharacterRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		E2291D6327A5E992006D3FD8 /* core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		E2291D6427A5E9A5006D3FD8 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				E2291D6727A5EA65006D3FD8 /* characters */,
+				E2291D6927A5EA77006D3FD8 /* favorites */,
+				E2291D6A27A5EA80006D3FD8 /* settings */,
+				E2291D6827A5EA72006D3FD8 /* detail */,
+				E2291D6627A5EA56006D3FD8 /* home */,
+				E2291D6527A5EA4D006D3FD8 /* splash */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		E2291D6527A5EA4D006D3FD8 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C1227A872FF007E5266 /* SplashScreen.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		E2291D6627A5EA56006D3FD8 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C1027A872F2007E5266 /* HomeScreen.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		E2291D6727A5EA65006D3FD8 /* characters */ = {
+			isa = PBXGroup;
+			children = (
+				E2291D6B27A5F33E006D3FD8 /* CharactersScreen.swift */,
+				E2291D6D27A5F362006D3FD8 /* CharactersViewModel.swift */,
+			);
+			path = characters;
+			sourceTree = "<group>";
+		};
+		E2291D6827A5EA72006D3FD8 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0E27A872E4007E5266 /* DetailScreen.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		E2291D6927A5EA77006D3FD8 /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0827A87292007E5266 /* FavoritesScreen.swift */,
+				E2555C0A27A872A2007E5266 /* FavoritesViewModel.swift */,
+			);
+			path = favorites;
+			sourceTree = "<group>";
+		};
+		E2291D6A27A5EA80006D3FD8 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0C27A872D5007E5266 /* SettingsScreen.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		E2555BFD27A8716A007E5266 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				E2555BFE27A87181007E5266 /* PageInfo.swift */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +424,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2555C1327A872FF007E5266 /* SplashScreen.swift in Sources */,
+				E2291D6E27A5F362006D3FD8 /* CharactersViewModel.swift in Sources */,
+				E2555C0B27A872A2007E5266 /* FavoritesViewModel.swift in Sources */,
+				E2555C1127A872F2007E5266 /* HomeScreen.swift in Sources */,
+				E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */,
 				E2291D3527A5E908006D3FD8 /* ContentView.swift in Sources */,
+				E2555C0D27A872D5007E5266 /* SettingsScreen.swift in Sources */,
+				E2555C0727A87252007E5266 /* GetCharacters.swift in Sources */,
+				E2555BFF27A87181007E5266 /* PageInfo.swift in Sources */,
+				E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */,
+				E2555C0F27A872E4007E5266 /* DetailScreen.swift in Sources */,
+				E2555C0127A87209007E5266 /* CharacterService.swift in Sources */,
+				E2555C0927A87292007E5266 /* FavoritesScreen.swift in Sources */,
+				E2291D6C27A5F33F006D3FD8 /* CharactersScreen.swift in Sources */,
 				E2291D3327A5E908006D3FD8 /* SwiftRorty_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
