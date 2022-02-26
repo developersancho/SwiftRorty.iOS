@@ -20,4 +20,19 @@ struct CharacterInfo: Codable {
     let status: Status?
     let type: String?
     let url: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case created = "created"
+        case episode = "episode"
+        case gender = "gender"
+        case id = "id"
+        case image = "image"
+        case location = "location"
+        case name = "name"
+        case origin = "origin"
+        case species = "species"
+        case status = "status"
+        case type = "type"
+        case url = "url"
+    }
 }

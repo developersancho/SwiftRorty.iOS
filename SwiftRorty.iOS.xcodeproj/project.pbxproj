@@ -45,6 +45,9 @@
 		E2991AB927AC76FA00BF4B9A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AB827AC76FA00BF4B9A /* Location.swift */; };
 		E2991ABB27AC771E00BF4B9A /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991ABA27AC771E00BF4B9A /* CharacterInfo.swift */; };
 		E2991ABD27AC777300BF4B9A /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991ABC27AC777300BF4B9A /* CharacterResponse.swift */; };
+		E2AD779A27CAC1E8006565C2 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779927CAC1E8006565C2 /* RestClient.swift */; };
+		E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779B27CAC242006565C2 /* RestClientErrors.swift */; };
+		E2AD779E27CACD8D006565C2 /* CharacterListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779D27CACD8D006565C2 /* CharacterListDto.swift */; };
 		E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98227C96E3E0017DA32 /* APIMethod.swift */; };
 		E2D5A98527C974010017DA32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98427C974010017DA32 /* APIClient.swift */; };
 		E2D5A98727C9771D0017DA32 /* APIClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */; };
@@ -119,6 +122,9 @@
 		E2991AB827AC76FA00BF4B9A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E2991ABA27AC771E00BF4B9A /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 		E2991ABC27AC777300BF4B9A /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		E2AD779927CAC1E8006565C2 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		E2AD779B27CAC242006565C2 /* RestClientErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClientErrors.swift; sourceTree = "<group>"; };
+		E2AD779D27CACD8D006565C2 /* CharacterListDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDto.swift; sourceTree = "<group>"; };
 		E2D5A98227C96E3E0017DA32 /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E2D5A98427C974010017DA32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientImpl.swift; sourceTree = "<group>"; };
@@ -296,7 +302,8 @@
 		E2291D6327A5E992006D3FD8 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				E28A38C027C94B19005DD497 /* network */,
+				E2AD779827CAC1CE006565C2 /* network */,
+				E28A38C027C94B19005DD497 /* network_2 */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -382,7 +389,7 @@
 			path = component;
 			sourceTree = "<group>";
 		};
-		E28A38C027C94B19005DD497 /* network */ = {
+		E28A38C027C94B19005DD497 /* network_2 */ = {
 			isa = PBXGroup;
 			children = (
 				E2D5A98227C96E3E0017DA32 /* APIMethod.swift */,
@@ -392,7 +399,7 @@
 				E2D5A98A27C977EF0017DA32 /* Decoder.swift */,
 				E2D5A98E27C97CEC0017DA32 /* URLRequest.swift */,
 			);
-			path = network;
+			path = network_2;
 			sourceTree = "<group>";
 		};
 		E2991AA527AC729500BF4B9A /* remote */ = {
@@ -421,6 +428,7 @@
 				E2512DAF27C82B0000FC6129 /* KeyValueModel.swift */,
 				E2512DB127C830FF00FC6129 /* StringExtension.swift */,
 				E28A38BE27C94730005DD497 /* DtoExtension.swift */,
+				E2AD779D27CACD8D006565C2 /* CharacterListDto.swift */,
 			);
 			path = dto;
 			sourceTree = "<group>";
@@ -452,6 +460,15 @@
 				E2991AB027AC760E00BF4B9A /* LocationResponse.swift */,
 			);
 			path = location;
+			sourceTree = "<group>";
+		};
+		E2AD779827CAC1CE006565C2 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				E2AD779927CAC1E8006565C2 /* RestClient.swift */,
+				E2AD779B27CAC242006565C2 /* RestClientErrors.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		FE5D0614452C9D5795CE3E9B /* Pods */ = {
@@ -712,6 +729,7 @@
 				E2555C1327A872FF007E5266 /* SplashScreen.swift in Sources */,
 				E2991AB327AC766300BF4B9A /* EpisodeInfo.swift in Sources */,
 				E2512DB027C82B0000FC6129 /* KeyValueModel.swift in Sources */,
+				E2AD779A27CAC1E8006565C2 /* RestClient.swift in Sources */,
 				E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */,
 				E2D5A99127C9986C0017DA32 /* CharacterRow.swift in Sources */,
 				E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */,
@@ -731,6 +749,7 @@
 				E2555BFF27A87181007E5266 /* PageInfo.swift in Sources */,
 				E2991ABD27AC777300BF4B9A /* CharacterResponse.swift in Sources */,
 				E2512DAC27C82A5E00FC6129 /* LocationDto.swift in Sources */,
+				E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */,
 				E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */,
 				E2555C0F27A872E4007E5266 /* DetailScreen.swift in Sources */,
 				E2D5A98727C9771D0017DA32 /* APIClientImpl.swift in Sources */,
@@ -743,6 +762,7 @@
 				E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */,
 				E2291D3327A5E908006D3FD8 /* SwiftRorty_iOSApp.swift in Sources */,
 				E2991AB727AC76D400BF4B9A /* Origin.swift in Sources */,
+				E2AD779E27CACD8D006565C2 /* CharacterListDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

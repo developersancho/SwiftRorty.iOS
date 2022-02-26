@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 class GetCharacters {
-    private let repository: CharacterRepository
+    private let repository: CharacterRepository = CharacterRepository()
     
-    init(_ repository: CharacterRepository = CharacterRepository()) {
-        self.repository = repository
-    }
+//    init(_ repository: CharacterRepository = CharacterRepository()) {
+//        self.repository = repository
+//    }
     
-    func invoke(page: Int) -> AnyPublisher<[CharacterDto]?, BaseError> {
+    func invoke(page: Int) -> AnyPublisher<CharacterListDto, Error> {
         repository.getCharacters(page: page)
     }
 }

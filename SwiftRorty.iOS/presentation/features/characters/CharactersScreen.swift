@@ -8,33 +8,39 @@
 import SwiftUI
 
 struct CharactersScreen: View {
-    @ObservedObject private var viewModel = CharactersViewModel()
+    @StateObject private var viewModel = CharactersViewModel()
 
     var body: some View {
         NavigationView {
-            List {
-                if viewModel.dataSource.isEmpty {
-                    emptySection
-                } else {
-                    charactersSection
-                }
+            ScrollView {
+                LazyVStack {
+                    
+                    ForEach (viewModel.charactersList) { character in
+                        CharacterRow(item: character)
+                    }.listStyle(.grouped)
+                
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .onAppear {
+                            viewModel.loadNextPage()
+                        }.disabled(!viewModel.hasMorePages)
+                    
+                }.navigationTitle("Rick and Morty")
             }
-            .listStyle(GroupedListStyle())
-            .navigationBarTitle("Rick And Morty")
         }
     }
     
-    var emptySection: some View {
-        Section {
-            Text("No results")
-        }
-    }
-    
-    var charactersSection: some View {
-        ForEach(viewModel.dataSource) { characterDto in
-            CharacterRow(item: characterDto)
-        }
-    }
+//    var emptySection: some View {
+//        Section {
+//            Text("No results")
+//        }
+//    }
+//
+//    var charactersSection: some View {
+//        ForEach(viewModel.dataSource) { characterDto in
+//            CharacterRow(item: characterDto)
+//        }
+//    }
     
 }
 

@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 class CharacterRepository {
-    private let remoteService: CharacterService
+    private let remoteService: CharacterService = CharacterServiceImpl()
     
-    init(_ remoteService: CharacterService = CharacterServiceImpl()) {
-        self.remoteService = remoteService
-    }
+//    init(_ remoteService: CharacterService = CharacterServiceImpl()) {
+//        self.remoteService = remoteService
+//    }
     
-    func getCharacters(page: Int) -> AnyPublisher<[CharacterDto]?, BaseError> {
+    func getCharacters(page: Int) -> AnyPublisher<CharacterListDto, Error> {
         remoteService.getCharacters(page: page)
     }
 }

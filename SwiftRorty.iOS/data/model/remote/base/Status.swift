@@ -8,7 +8,7 @@
 import Foundation
 
 enum Status: String, Codable {
-    case Alive
-    case Dead
-    case Unknown
+    case alive = "Alive"
+    case dead = "Dead"
+    case unknown = "unknown"
 }

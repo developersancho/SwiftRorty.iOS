@@ -24,6 +24,6 @@ struct CharacterDto: Identifiable {
     var isFavorite: Bool = false
     
     static func defaultDto() -> CharacterDto {
-        return CharacterDto(created: nil, episode: nil, gender: nil, id: 1, image: nil, location: nil, name: "Rick Sanchez", origin: nil, species: "Human", status: Status.Alive, type: nil, url: nil)
+        return CharacterDto(created: nil, episode: nil, gender: nil, id: 1, image: nil, location: nil, name: "Rick Sanchez", origin: nil, species: "Human", status: Status.alive, type: nil, url: nil)
     }
 }

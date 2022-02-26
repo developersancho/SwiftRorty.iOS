@@ -13,7 +13,7 @@ extension URLRequest {
     init(_ endpoint: APIEndpoint,
          _ method: APIMethod,
          _ parameters: [String: Any?]? = nil) {
-        let urlString = "\(URLRequest.baseUrl)\(endpoint.path())"
+        let urlString = "\(URLRequest.baseUrl)\(endpoint.path)"
         let url = URL(string: urlString)!
         self.init(url: url)
         self.httpMethod = method.rawValue
