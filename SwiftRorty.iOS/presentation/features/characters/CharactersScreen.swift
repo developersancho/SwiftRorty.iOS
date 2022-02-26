@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct CharactersScreen: View {
+    @ObservedObject private var viewModel = CharactersViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                if viewModel.dataSource.isEmpty {
+                    emptySection
+                } else {
+                    charactersSection
+                }
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Rick And Morty")
+        }
     }
+    
+    var emptySection: some View {
+        Section {
+            Text("No results")
+        }
+    }
+    
+    var charactersSection: some View {
+        ForEach(viewModel.dataSource) { characterDto in
+            CharacterRow(item: characterDto)
+        }
+    }
+    
 }
 
 struct CharactersScreen_Previews: PreviewProvider {
