@@ -7,24 +7,26 @@
 
 import Foundation
 import Combine
+import Resolver
 
 protocol CharacterService {
-    func getCharacters(page: Int) -> AnyPublisher<[CharacterDto]?, BaseError>
+    func getCharacters(page: Int) -> AnyPublisher<CharacterListDto, Error>
 }
 
 class CharacterServiceImpl: CharacterService {
     
-    private let apiClient: APIClient
+    //private let restClient = RestClientImpl()
     
-    init(_ apiClient: APIClient = APIClientImpl()) {
-        self.apiClient = apiClient
+    @Injected private var restClient: RestClient
+    
+    func getCharacters(page: Int) -> AnyPublisher<CharacterListDto, Error> {
+        //requestGetCharacters(page: page).map { $0.toCharacterDtoList() }.eraseToAnyPublisher()
+        restClient.get(APIEndpoint.characters(page)).map { (response: CharacterResponse) in
+            CharacterListDto(info: response.pageInfo, characters: response.toCharacterDtoList())
+        }.eraseToAnyPublisher()
     }
     
-    func getCharacters(page: Int) -> AnyPublisher<[CharacterDto]?, BaseError> {
-        requestGetCharacters(page: page).map { $0.toCharacterDtoList() }.eraseToAnyPublisher()
-    }
-    
-    private func requestGetCharacters(page: Int) -> AnyPublisher<CharacterResponse, BaseError> {
-        apiClient.request(URLRequest(APIEndpoint.characters(page), APIMethod.get))
-    }
+//    private func requestGetCharacters(page: Int) -> AnyPublisher<CharacterResponse, BaseError> {
+//        apiClient.request(URLRequest(APIEndpoint.characters(page), APIMethod.get))
+//    }
 }

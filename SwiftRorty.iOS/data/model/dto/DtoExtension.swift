@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 extension CharacterResponse {
-    func toCharacterDtoList() -> [CharacterDto]? {
-        results?.map { $0.toCharacterDto() }
+    func toCharacterDtoList() -> [CharacterDto] {
+        results.map { $0.toCharacterDto() }
     }
 }
 

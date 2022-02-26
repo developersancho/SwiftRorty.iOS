@@ -1,0 +1,6 @@
+framework module Resolver {
+  umbrella header "Resolver-umbrella.h"
+
+  export *
+  module * { export * }
+}
