@@ -7,9 +7,11 @@
 
 import Foundation
 import Combine
+import Resolver
 
 class GetCharacters {
-    private let repository: CharacterRepository = CharacterRepository()
+    //private let repository: CharacterRepository = CharacterRepository()
+    @Injected private var repository: CharacterRepository
     
 //    init(_ repository: CharacterRepository = CharacterRepository()) {
 //        self.repository = repository

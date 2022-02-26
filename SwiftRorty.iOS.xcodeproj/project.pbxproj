@@ -48,6 +48,7 @@
 		E2AD779A27CAC1E8006565C2 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779927CAC1E8006565C2 /* RestClient.swift */; };
 		E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779B27CAC242006565C2 /* RestClientErrors.swift */; };
 		E2AD779E27CACD8D006565C2 /* CharacterListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779D27CACD8D006565C2 /* CharacterListDto.swift */; };
+		E2AD77A127CAD8E1006565C2 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD77A027CAD8E1006565C2 /* AppModule.swift */; };
 		E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98227C96E3E0017DA32 /* APIMethod.swift */; };
 		E2D5A98527C974010017DA32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98427C974010017DA32 /* APIClient.swift */; };
 		E2D5A98727C9771D0017DA32 /* APIClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */; };
@@ -125,6 +126,7 @@
 		E2AD779927CAC1E8006565C2 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		E2AD779B27CAC242006565C2 /* RestClientErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClientErrors.swift; sourceTree = "<group>"; };
 		E2AD779D27CACD8D006565C2 /* CharacterListDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDto.swift; sourceTree = "<group>"; };
+		E2AD77A027CAD8E1006565C2 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		E2D5A98227C96E3E0017DA32 /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E2D5A98427C974010017DA32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientImpl.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		E2291D3127A5E908006D3FD8 /* SwiftRorty.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E2AD779F27CAD8CA006565C2 /* di */,
 				E267D17527C9188300254746 /* component */,
 				E2291D6327A5E992006D3FD8 /* core */,
 				E2291D5C27A5E941006D3FD8 /* data */,
@@ -469,6 +472,14 @@
 				E2AD779B27CAC242006565C2 /* RestClientErrors.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		E2AD779F27CAD8CA006565C2 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				E2AD77A027CAD8E1006565C2 /* AppModule.swift */,
+			);
+			path = di;
 			sourceTree = "<group>";
 		};
 		FE5D0614452C9D5795CE3E9B /* Pods */ = {
@@ -745,6 +756,7 @@
 				E2D5A98B27C977EF0017DA32 /* Decoder.swift in Sources */,
 				E2D5A98D27C97AC20017DA32 /* APIEndpoint.swift in Sources */,
 				E2555C0727A87252007E5266 /* GetCharacters.swift in Sources */,
+				E2AD77A127CAD8E1006565C2 /* AppModule.swift in Sources */,
 				E2991AB927AC76FA00BF4B9A /* Location.swift in Sources */,
 				E2555BFF27A87181007E5266 /* PageInfo.swift in Sources */,
 				E2991ABD27AC777300BF4B9A /* CharacterResponse.swift in Sources */,

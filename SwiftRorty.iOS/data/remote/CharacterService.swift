@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Resolver
 
 protocol CharacterService {
     func getCharacters(page: Int) -> AnyPublisher<CharacterListDto, Error>
@@ -14,7 +15,9 @@ protocol CharacterService {
 
 class CharacterServiceImpl: CharacterService {
     
-    private let restClient = RestClientImpl()
+    //private let restClient = RestClientImpl()
+    
+    @Injected private var restClient: RestClient
     
     func getCharacters(page: Int) -> AnyPublisher<CharacterListDto, Error> {
         //requestGetCharacters(page: page).map { $0.toCharacterDtoList() }.eraseToAnyPublisher()

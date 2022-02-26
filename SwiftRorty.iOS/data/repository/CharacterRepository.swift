@@ -7,9 +7,11 @@
 
 import Foundation
 import Combine
+import Resolver
 
 class CharacterRepository {
-    private let remoteService: CharacterService = CharacterServiceImpl()
+    //private let remoteService: CharacterService = CharacterServiceImpl()
+    @Injected private var remoteService: CharacterService
     
 //    init(_ remoteService: CharacterService = CharacterServiceImpl()) {
 //        self.remoteService = remoteService

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Combine
+import Resolver
 
 class CharactersViewModel: ObservableObject {
 //    private let getCharacters: GetCharacters = GetCharacters()
@@ -37,7 +38,8 @@ class CharactersViewModel: ObservableObject {
 //        }.store(in: &disposables)
 //    }
     
-    private let getCharacters: GetCharacters = GetCharacters()
+    //private let getCharacters: GetCharacters = GetCharacters()
+    @Injected private var getCharacters: GetCharacters
     
     @Published var charactersList : [CharacterDto] = []
     private var cancelables = [AnyCancellable]()
