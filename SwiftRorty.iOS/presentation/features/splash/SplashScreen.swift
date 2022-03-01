@@ -12,7 +12,7 @@ struct SplashScreen: View {
     
     var body: some View {
         if self.isActive {
-            CharactersScreen()
+            HomeScreen()
         } else {
             VStack(alignment: HorizontalAlignment.center, spacing: 20) {
                 Image(uiImage: UIImage(named: "ic_splash.jpeg")!)
@@ -33,6 +33,7 @@ struct SplashScreen: View {
                     }
                 }
             })
+            .preferredColorScheme(.dark)
         }
     }
 }

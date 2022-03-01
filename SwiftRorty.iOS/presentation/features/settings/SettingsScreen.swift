@@ -9,7 +9,21 @@ import SwiftUI
 
 struct SettingsScreen: View {
     var body: some View {
-        Text("Settings Screen")
+        NavigationView {
+            ZStack {
+                Color.Background.edgesIgnoringSafeArea(.all)
+                Text("Settings Screen")
+                    .fontTemplate(AppFontTemplate.title)
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    VStack {
+                        Text("Settings").fontTemplate(AppFontTemplate.title)
+                    }
+                }
+            }
+        }
     }
 }
 

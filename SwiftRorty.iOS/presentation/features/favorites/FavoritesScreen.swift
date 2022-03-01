@@ -9,7 +9,23 @@ import SwiftUI
 
 struct FavoritesScreen: View {
     var body: some View {
-        Text("Favorites Screen")
+        NavigationView {
+            ZStack{
+                Color.Background.edgesIgnoringSafeArea(.all)
+                HStack {
+                    Text("Favorites Screen")
+                        .fontTemplate(AppFontTemplate.title)
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    VStack {
+                        Text("Favorites").fontTemplate(AppFontTemplate.title)
+                    }
+                }
+            }
+        }
     }
 }
 

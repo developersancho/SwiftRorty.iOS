@@ -19,6 +19,16 @@
 		E2291D5027A5E90A006D3FD8 /* SwiftRorty_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D4F27A5E90A006D3FD8 /* SwiftRorty_iOSUITestsLaunchTests.swift */; };
 		E2291D6C27A5F33F006D3FD8 /* CharactersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D6B27A5F33E006D3FD8 /* CharactersScreen.swift */; };
 		E2291D6E27A5F362006D3FD8 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D6D27A5F362006D3FD8 /* CharactersViewModel.swift */; };
+		E232FA0627CD4D570073FCC8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA0527CD4D570073FCC8 /* Endpoint.swift */; };
+		E232FA0927CD4DBF0073FCC8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA0827CD4DBF0073FCC8 /* Color.swift */; };
+		E232FA0F27CD56780073FCC8 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E232FA0B27CD56770073FCC8 /* Raleway-SemiBold.ttf */; };
+		E232FA1027CD56780073FCC8 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E232FA0C27CD56780073FCC8 /* Raleway-Medium.ttf */; };
+		E232FA1127CD56780073FCC8 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E232FA0D27CD56780073FCC8 /* Raleway-Bold.ttf */; };
+		E232FA1227CD56780073FCC8 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E232FA0E27CD56780073FCC8 /* Raleway-Regular.ttf */; };
+		E232FA1727CD6C9D0073FCC8 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1627CD6C9D0073FCC8 /* AppFont.swift */; };
+		E232FA1927CD6D9B0073FCC8 /* FontTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */; };
+		E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */; };
+		E232FA1D27CD6DF00073FCC8 /* AppFontTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */; };
 		E2512DAC27C82A5E00FC6129 /* LocationDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DAB27C82A5E00FC6129 /* LocationDto.swift */; };
 		E2512DAE27C82AAC00FC6129 /* CharacterDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DAD27C82AAC00FC6129 /* CharacterDto.swift */; };
 		E2512DB027C82B0000FC6129 /* KeyValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DAF27C82B0000FC6129 /* KeyValueModel.swift */; };
@@ -49,6 +59,7 @@
 		E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779B27CAC242006565C2 /* RestClientErrors.swift */; };
 		E2AD779E27CACD8D006565C2 /* CharacterListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD779D27CACD8D006565C2 /* CharacterListDto.swift */; };
 		E2AD77A127CAD8E1006565C2 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD77A027CAD8E1006565C2 /* AppModule.swift */; };
+		E2AF0A4127CD88FD0012EE85 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF0A4027CD88FD0012EE85 /* UINavigationControllerExtension.swift */; };
 		E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98227C96E3E0017DA32 /* APIMethod.swift */; };
 		E2D5A98527C974010017DA32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98427C974010017DA32 /* APIClient.swift */; };
 		E2D5A98727C9771D0017DA32 /* APIClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */; };
@@ -97,6 +108,17 @@
 		E2291D4F27A5E90A006D3FD8 /* SwiftRorty_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRorty_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E2291D6B27A5F33E006D3FD8 /* CharactersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreen.swift; sourceTree = "<group>"; };
 		E2291D6D27A5F362006D3FD8 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		E232FA0527CD4D570073FCC8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E232FA0827CD4DBF0073FCC8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E232FA0B27CD56770073FCC8 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		E232FA0C27CD56780073FCC8 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		E232FA0D27CD56780073FCC8 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		E232FA0E27CD56780073FCC8 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		E232FA1527CD63AB0073FCC8 /* SwiftRorty-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftRorty-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E232FA1627CD6C9D0073FCC8 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTemplate.swift; sourceTree = "<group>"; };
+		E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTemplateModifier.swift; sourceTree = "<group>"; };
+		E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontTemplate.swift; sourceTree = "<group>"; };
 		E2512DAB27C82A5E00FC6129 /* LocationDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDto.swift; sourceTree = "<group>"; };
 		E2512DAD27C82AAC00FC6129 /* CharacterDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDto.swift; sourceTree = "<group>"; };
 		E2512DAF27C82B0000FC6129 /* KeyValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueModel.swift; sourceTree = "<group>"; };
@@ -127,6 +149,7 @@
 		E2AD779B27CAC242006565C2 /* RestClientErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClientErrors.swift; sourceTree = "<group>"; };
 		E2AD779D27CACD8D006565C2 /* CharacterListDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDto.swift; sourceTree = "<group>"; };
 		E2AD77A027CAD8E1006565C2 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		E2AF0A4027CD88FD0012EE85 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		E2D5A98227C96E3E0017DA32 /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E2D5A98427C974010017DA32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientImpl.swift; sourceTree = "<group>"; };
@@ -201,6 +224,9 @@
 		E2291D3127A5E908006D3FD8 /* SwiftRorty.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E2AF0A3F27CD88EB0012EE85 /* extensions */,
+				E232FA1527CD63AB0073FCC8 /* SwiftRorty-iOS-Info.plist */,
+				E232FA0727CD4DAF0073FCC8 /* theme */,
 				E2AD779F27CAD8CA006565C2 /* di */,
 				E267D17527C9188300254746 /* component */,
 				E2291D6327A5E992006D3FD8 /* core */,
@@ -343,9 +369,9 @@
 		E2291D6727A5EA65006D3FD8 /* characters */ = {
 			isa = PBXGroup;
 			children = (
+				E2D5A99027C9986C0017DA32 /* CharacterRow.swift */,
 				E2291D6B27A5F33E006D3FD8 /* CharactersScreen.swift */,
 				E2291D6D27A5F362006D3FD8 /* CharactersViewModel.swift */,
-				E2D5A99027C9986C0017DA32 /* CharacterRow.swift */,
 			);
 			path = characters;
 			sourceTree = "<group>";
@@ -373,6 +399,27 @@
 				E2555C0C27A872D5007E5266 /* SettingsScreen.swift */,
 			);
 			path = settings;
+			sourceTree = "<group>";
+		};
+		E232FA0727CD4DAF0073FCC8 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				E232FA0A27CD56410073FCC8 /* fonts */,
+				E232FA0827CD4DBF0073FCC8 /* Color.swift */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		E232FA0A27CD56410073FCC8 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E2AF0A3E27CD74000012EE85 /* files */,
+				E232FA1627CD6C9D0073FCC8 /* AppFont.swift */,
+				E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */,
+				E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */,
+				E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		E2555BFD27A8716A007E5266 /* base */ = {
@@ -470,6 +517,7 @@
 			children = (
 				E2AD779927CAC1E8006565C2 /* RestClient.swift */,
 				E2AD779B27CAC242006565C2 /* RestClientErrors.swift */,
+				E232FA0527CD4D570073FCC8 /* Endpoint.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -480,6 +528,25 @@
 				E2AD77A027CAD8E1006565C2 /* AppModule.swift */,
 			);
 			path = di;
+			sourceTree = "<group>";
+		};
+		E2AF0A3E27CD74000012EE85 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				E232FA0D27CD56780073FCC8 /* Raleway-Bold.ttf */,
+				E232FA0C27CD56780073FCC8 /* Raleway-Medium.ttf */,
+				E232FA0E27CD56780073FCC8 /* Raleway-Regular.ttf */,
+				E232FA0B27CD56770073FCC8 /* Raleway-SemiBold.ttf */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+		E2AF0A3F27CD88EB0012EE85 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2AF0A4027CD88FD0012EE85 /* UINavigationControllerExtension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		FE5D0614452C9D5795CE3E9B /* Pods */ = {
@@ -605,7 +672,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2291D3A27A5E90A006D3FD8 /* Preview Assets.xcassets in Resources */,
+				E232FA1227CD56780073FCC8 /* Raleway-Regular.ttf in Resources */,
+				E232FA0F27CD56780073FCC8 /* Raleway-SemiBold.ttf in Resources */,
 				E2291D3727A5E909006D3FD8 /* Assets.xcassets in Resources */,
+				E232FA1027CD56780073FCC8 /* Raleway-Medium.ttf in Resources */,
+				E232FA1127CD56780073FCC8 /* Raleway-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +804,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2AF0A4127CD88FD0012EE85 /* UINavigationControllerExtension.swift in Sources */,
 				E267D17727C9189700254746 /* LottieView.swift in Sources */,
 				E2991AB527AC76A300BF4B9A /* EpisodeResponse.swift in Sources */,
 				E2512DAE27C82AAC00FC6129 /* CharacterDto.swift in Sources */,
@@ -741,13 +813,19 @@
 				E2991AB327AC766300BF4B9A /* EpisodeInfo.swift in Sources */,
 				E2512DB027C82B0000FC6129 /* KeyValueModel.swift in Sources */,
 				E2AD779A27CAC1E8006565C2 /* RestClient.swift in Sources */,
+				E232FA0627CD4D570073FCC8 /* Endpoint.swift in Sources */,
 				E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */,
+				E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */,
 				E2D5A99127C9986C0017DA32 /* CharacterRow.swift in Sources */,
+				E232FA1727CD6C9D0073FCC8 /* AppFont.swift in Sources */,
 				E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */,
 				E2291D6E27A5F362006D3FD8 /* CharactersViewModel.swift in Sources */,
+				E232FA0927CD4DBF0073FCC8 /* Color.swift in Sources */,
 				E2555C0B27A872A2007E5266 /* FavoritesViewModel.swift in Sources */,
+				E232FA1927CD6D9B0073FCC8 /* FontTemplate.swift in Sources */,
 				E2512DB227C830FF00FC6129 /* StringExtension.swift in Sources */,
 				E2555C1127A872F2007E5266 /* HomeScreen.swift in Sources */,
+				E232FA1D27CD6DF00073FCC8 /* AppFontTemplate.swift in Sources */,
 				E2991AB127AC760E00BF4B9A /* LocationResponse.swift in Sources */,
 				E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */,
 				E2291D3527A5E908006D3FD8 /* ContentView.swift in Sources */,
@@ -939,6 +1017,7 @@
 				DEVELOPMENT_TEAM = CYBRMS43C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftRorty-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -969,6 +1048,7 @@
 				DEVELOPMENT_TEAM = CYBRMS43C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftRorty-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

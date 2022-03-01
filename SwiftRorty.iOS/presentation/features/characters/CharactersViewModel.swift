@@ -48,10 +48,10 @@ class CharactersViewModel: ObservableObject {
     @Published var hasMorePages = false
     
     init() {
-        loadPage()
+        //loadPage()
     }
     
-    private func loadPage() {
+    func loadPage() {
         getCharacters.invoke(page: page)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] response in

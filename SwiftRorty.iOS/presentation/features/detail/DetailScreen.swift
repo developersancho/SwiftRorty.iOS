@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct DetailScreen: View {
+    @State var characterId: Int = 0
+    
+    init(id: Int) {
+        _characterId = State(initialValue: id)
+    }
+    
     var body: some View {
-        Text("Detail Screen")
+        Text("Detail Screen Character Id is => \(characterId)")
     }
 }
 
 struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        DetailScreen()
+        DetailScreen(id: 1)
     }
 }

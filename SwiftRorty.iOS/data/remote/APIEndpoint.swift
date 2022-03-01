@@ -7,11 +7,6 @@
 
 import Foundation
 
-protocol Endpoint {
-    var url: URL { get }
-    var path: String { get }
-}
-
 /// BaseUrl of Rick and Morty API Endpoint
 private let baseURL = URL(string: "https://rickandmortyapi.com/api/")
 
