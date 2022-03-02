@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailContentView: View {
     var contents: [KeyValueModel] = []
+    var dto: CharacterDto?
     
     var body: some View {
         ZStack {
@@ -16,6 +17,7 @@ struct DetailContentView: View {
                 .fill(Color.Card).shadow(radius: 1)
             
             VStack(alignment: .leading, spacing: 12) {
+                DetailStatusView(dto: dto)
                 ForEach(contents, id: \.id) { content in
                     HStack(alignment: .center) {
                         Text(content.key!)

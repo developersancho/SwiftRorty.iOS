@@ -24,7 +24,7 @@ struct DetailScreen: View {
             ScrollView {
                 LazyVStack {
                     DetailHeaderView(dto: viewModel.dto)
-                    DetailContentView(contents: viewModel.details)
+                    DetailContentView(contents: viewModel.details, dto: viewModel.dto)
                 }.padding(12)
             }
         }

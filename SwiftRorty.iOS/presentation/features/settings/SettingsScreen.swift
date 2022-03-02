@@ -12,7 +12,7 @@ struct SettingsScreen: View {
         NavigationView {
             ZStack {
                 Color.Background.edgesIgnoringSafeArea(.all)
-                Text("Settings Screen")
+                Text("Settings Screen, Version: \(UIApplication.appVersion())")
                     .fontTemplate(AppFontTemplate.title)
             }
             .navigationBarTitleDisplayMode(.inline)
