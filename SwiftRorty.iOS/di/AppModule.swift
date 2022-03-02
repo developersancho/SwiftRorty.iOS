@@ -31,6 +31,7 @@ extension Resolver: ResolverRegistering {
     
     private static func registerDomain() {
         register { GetCharacters() }
+        register { GetCharacterDetail() }
     }
     
 }

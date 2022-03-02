@@ -30,4 +30,8 @@ struct AppFontTemplate {
                                    weight: .bold,
                                    foregroundColor: .Text)
     
+    static let body4 = FontTemplate(font: Font.custom(AppFont.bold.rawValue, size: 14.0),
+                                   weight: .bold,
+                                   foregroundColor: .Text)
+    
 }

@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct DetailScreen: View {
-    @State var characterId: Int = 0
+    @StateObject
+    private var viewModel = DetailViewModel()
+    @State
+    private var characterId: Int = 0
     
     init(id: Int) {
         _characterId = State(initialValue: id)
+        UITabBar.appearance().barTintColor = UIColor(Color.Primary)
     }
     
     var body: some View {
-        Text("Detail Screen Character Id is => \(characterId)")
+        ZStack {
+            Color.Background.edgesIgnoringSafeArea(.all)
+            ScrollView {
+                LazyVStack {
+                    DetailHeaderView(dto: viewModel.dto)
+                    DetailContentView(contents: viewModel.details)
+                }.padding(12)
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                VStack {
+                    Text("Details").fontTemplate(AppFontTemplate.title)
+                }
+            }
+        }
+        .onAppear(perform: {
+            viewModel.loadDetail(characterId: characterId)
+        })
     }
 }
 

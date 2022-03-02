@@ -15,4 +15,8 @@ class CharacterRepository {
     func getCharacters(page: Int) -> AnyPublisher<CharacterResponse, Error> {
         remoteService.getCharacters(page: page)
     }
+    
+    func getCharacter(characterId: Int) -> AnyPublisher<CharacterInfo, Error> {
+        remoteService.getCharacter(characterId: characterId)
+    }
 }

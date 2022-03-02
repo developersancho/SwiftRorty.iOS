@@ -45,6 +45,10 @@
 		E2555C1127A872F2007E5266 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C1027A872F2007E5266 /* HomeScreen.swift */; };
 		E2555C1327A872FF007E5266 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C1227A872FF007E5266 /* SplashScreen.swift */; };
 		E267D17727C9189700254746 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267D17627C9189700254746 /* LottieView.swift */; };
+		E26BD39F27CFFE51006CA548 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD39E27CFFE51006CA548 /* DetailViewModel.swift */; };
+		E26BD3A127D002B0006CA548 /* GetCharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A027D002B0006CA548 /* GetCharacterDetail.swift */; };
+		E26BD3A327D01629006CA548 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A227D01629006CA548 /* DetailHeaderView.swift */; };
+		E26BD3A527D01769006CA548 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A427D01769006CA548 /* DetailContentView.swift */; };
 		E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A38BE27C94730005DD497 /* DtoExtension.swift */; };
 		E2991AA927AC72ED00BF4B9A /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AA827AC72ED00BF4B9A /* Status.swift */; };
 		E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AAE27AC740800BF4B9A /* LocationInfo.swift */; };
@@ -135,6 +139,10 @@
 		E2555C1027A872F2007E5266 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		E2555C1227A872FF007E5266 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		E267D17627C9189700254746 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E26BD39E27CFFE51006CA548 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		E26BD3A027D002B0006CA548 /* GetCharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterDetail.swift; sourceTree = "<group>"; };
+		E26BD3A227D01629006CA548 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		E26BD3A427D01769006CA548 /* DetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
 		E28A38BE27C94730005DD497 /* DtoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoExtension.swift; sourceTree = "<group>"; };
 		E2991AA827AC72ED00BF4B9A /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		E2991AAE27AC740800BF4B9A /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
@@ -281,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				E2555C0627A87252007E5266 /* GetCharacters.swift */,
+				E26BD3A027D002B0006CA548 /* GetCharacterDetail.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -379,7 +388,10 @@
 		E2291D6827A5EA72006D3FD8 /* detail */ = {
 			isa = PBXGroup;
 			children = (
+				E26BD3A227D01629006CA548 /* DetailHeaderView.swift */,
 				E2555C0E27A872E4007E5266 /* DetailScreen.swift */,
+				E26BD39E27CFFE51006CA548 /* DetailViewModel.swift */,
+				E26BD3A427D01769006CA548 /* DetailContentView.swift */,
 			);
 			path = detail;
 			sourceTree = "<group>";
@@ -817,6 +829,7 @@
 				E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */,
 				E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */,
 				E2D5A99127C9986C0017DA32 /* CharacterRow.swift in Sources */,
+				E26BD39F27CFFE51006CA548 /* DetailViewModel.swift in Sources */,
 				E232FA1727CD6C9D0073FCC8 /* AppFont.swift in Sources */,
 				E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */,
 				E2291D6E27A5F362006D3FD8 /* CharactersViewModel.swift in Sources */,
@@ -833,18 +846,21 @@
 				E2D5A98927C977A30017DA32 /* BaseError.swift in Sources */,
 				E2D5A98B27C977EF0017DA32 /* Decoder.swift in Sources */,
 				E2D5A98D27C97AC20017DA32 /* APIEndpoint.swift in Sources */,
+				E26BD3A527D01769006CA548 /* DetailContentView.swift in Sources */,
 				E2555C0727A87252007E5266 /* GetCharacters.swift in Sources */,
 				E2AD77A127CAD8E1006565C2 /* AppModule.swift in Sources */,
 				E2991AB927AC76FA00BF4B9A /* Location.swift in Sources */,
 				E2555BFF27A87181007E5266 /* PageInfo.swift in Sources */,
 				E2991ABD27AC777300BF4B9A /* CharacterResponse.swift in Sources */,
 				E2512DAC27C82A5E00FC6129 /* LocationDto.swift in Sources */,
+				E26BD3A327D01629006CA548 /* DetailHeaderView.swift in Sources */,
 				E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */,
 				E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */,
 				E2555C0F27A872E4007E5266 /* DetailScreen.swift in Sources */,
 				E2D5A98727C9771D0017DA32 /* APIClientImpl.swift in Sources */,
 				E2991AA927AC72ED00BF4B9A /* Status.swift in Sources */,
 				E2555C0127A87209007E5266 /* CharacterService.swift in Sources */,
+				E26BD3A127D002B0006CA548 /* GetCharacterDetail.swift in Sources */,
 				E2555C0927A87292007E5266 /* FavoritesScreen.swift in Sources */,
 				E2291D6C27A5F33F006D3FD8 /* CharactersScreen.swift in Sources */,
 				E2D5A98F27C97CEC0017DA32 /* URLRequest.swift in Sources */,
