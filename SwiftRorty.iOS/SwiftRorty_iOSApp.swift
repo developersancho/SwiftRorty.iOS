@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftRorty_iOSApp: App {
+    
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
+            SplashScreen().preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

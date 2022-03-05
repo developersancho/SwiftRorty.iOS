@@ -9,35 +9,33 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    //    init () {
-    //        let coloredAppearance = UINavigationBarAppearance()
-    //
-    //        // this overrides everything you have set up earlier.
-    //        coloredAppearance.configureWithTransparentBackground()
-    //        coloredAppearance.backgroundColor = UIColor(Color.Primary)
-    //
-    //        // to make everything work normally
-    //        UINavigationBar.appearance().standardAppearance = coloredAppearance
-    //        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
-    //    }
+    init() {
+        let appeareance = UITabBarAppearance()
+        appeareance.backgroundColor = UIColor(Color.Primary)
+        
+        // Use this appearance when scrolling behind the TabView:
+        UITabBar.appearance().standardAppearance = appeareance
+        // Use this appearance when scrolled all the way up:
+        UITabBar.appearance().scrollEdgeAppearance = appeareance
+        
+        //UITabBar.appearance().backgroundColor = UIColor(Color.Primary)
+        UITabBar.appearance().barTintColor = UIColor(Color.Primary)
+        UITabBar.appearance().unselectedItemTintColor = UIColor(Color.UnSelectedBottomItem)
+        //UITabBar.appearance().isTranslucent = false
+        
+    }
     
-    @State var uiTabarController: UITabBarController?
-
     var body: some View {
         TabView {
             CharactersScreen().tabItem {
-                Label("Characters", systemImage: "magazine")
+                Label("Characters", systemImage: "magazine").fontTemplate(AppFontTemplate.body5)
             }
             FavoritesScreen().tabItem {
-                Label("Favorites", systemImage: "heart")
+                Label("Favorites", systemImage: "heart").fontTemplate(AppFontTemplate.body5)
             }
             SettingsScreen().tabItem {
-                Label("Settings", systemImage: "gearshape")
+                Label("Settings", systemImage: "gearshape").fontTemplate(AppFontTemplate.body5)
             }
-        }
-        .onAppear() {
-            UITabBar.appearance().barTintColor = UIColor(Color.Primary)
-            UITabBar.appearance().unselectedItemTintColor = UIColor(Color.UnSelectedBottomItem)
         }
         .accentColor(Color.SelectedBottomItem)
     }

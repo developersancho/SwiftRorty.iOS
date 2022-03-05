@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsScreen: View {
-    @State private var nightMode = false
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     fileprivate func SettingsContentView() -> some View {
         return ZStack(alignment: .topLeading) {
@@ -20,8 +20,12 @@ struct SettingsScreen: View {
                     Text("Theme Mode")
                         .fontTemplate(AppFontTemplate.body4)
                     Spacer()
-                    Toggle("", isOn: $nightMode)
-                        .toggleStyle(SwitchToggleStyle(tint: .ToggleRed))
+                    Toggle("", isOn: $isDarkMode)
+                        .toggleStyle(ColoredToggleStyle())
+                        //.toggleStyle(SwitchToggleStyle(tint: .ToggleRed))
+                        .onChange(of: isDarkMode, perform: { value in
+                            
+                        })
                 }
                 Divider()
                 HStack(alignment: .center) {

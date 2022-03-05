@@ -50,6 +50,10 @@
 		E26BD3A327D01629006CA548 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A227D01629006CA548 /* DetailHeaderView.swift */; };
 		E26BD3A527D01769006CA548 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A427D01769006CA548 /* DetailContentView.swift */; };
 		E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A38BE27C94730005DD497 /* DtoExtension.swift */; };
+		E2900B9627D3F6080055AD96 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */; };
+		E2900B9827D3F6290055AD96 /* VerticalToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */; };
+		E2900B9A27D3F74A0055AD96 /* ColoredToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9927D3F74A0055AD96 /* ColoredToggleStyle.swift */; };
+		E2900B9C27D3FF720055AD96 /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9B27D3FF720055AD96 /* UITabBarControllerExtension.swift */; };
 		E2991AA927AC72ED00BF4B9A /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AA827AC72ED00BF4B9A /* Status.swift */; };
 		E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AAE27AC740800BF4B9A /* LocationInfo.swift */; };
 		E2991AB127AC760E00BF4B9A /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AB027AC760E00BF4B9A /* LocationResponse.swift */; };
@@ -147,6 +151,10 @@
 		E26BD3A227D01629006CA548 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		E26BD3A427D01769006CA548 /* DetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
 		E28A38BE27C94730005DD497 /* DtoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoExtension.swift; sourceTree = "<group>"; };
+		E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalToggleStyle.swift; sourceTree = "<group>"; };
+		E2900B9927D3F74A0055AD96 /* ColoredToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredToggleStyle.swift; sourceTree = "<group>"; };
+		E2900B9B27D3FF720055AD96 /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtension.swift; sourceTree = "<group>"; };
 		E2991AA827AC72ED00BF4B9A /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		E2991AAE27AC740800BF4B9A /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
 		E2991AB027AC760E00BF4B9A /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
@@ -454,6 +462,9 @@
 			isa = PBXGroup;
 			children = (
 				E267D17627C9189700254746 /* LottieView.swift */,
+				E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */,
+				E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */,
+				E2900B9927D3F74A0055AD96 /* ColoredToggleStyle.swift */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -566,6 +577,7 @@
 				E2AF0A4027CD88FD0012EE85 /* UINavigationControllerExtension.swift */,
 				E2B5A95A27D0223700C14287 /* UIApplicationExtension.swift */,
 				E2B5A95E27D0258200C14287 /* BundleExtension.swift */,
+				E2900B9B27D3FF720055AD96 /* UITabBarControllerExtension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -838,12 +850,14 @@
 				E232FA0627CD4D570073FCC8 /* Endpoint.swift in Sources */,
 				E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */,
 				E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */,
+				E2900B9827D3F6290055AD96 /* VerticalToggleStyle.swift in Sources */,
 				E2D5A99127C9986C0017DA32 /* CharacterRow.swift in Sources */,
 				E26BD39F27CFFE51006CA548 /* DetailViewModel.swift in Sources */,
 				E232FA1727CD6C9D0073FCC8 /* AppFont.swift in Sources */,
 				E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */,
 				E2291D6E27A5F362006D3FD8 /* CharactersViewModel.swift in Sources */,
 				E232FA0927CD4DBF0073FCC8 /* Color.swift in Sources */,
+				E2900B9627D3F6080055AD96 /* CheckboxToggleStyle.swift in Sources */,
 				E2555C0B27A872A2007E5266 /* FavoritesViewModel.swift in Sources */,
 				E232FA1927CD6D9B0073FCC8 /* FontTemplate.swift in Sources */,
 				E2512DB227C830FF00FC6129 /* StringExtension.swift in Sources */,
@@ -865,6 +879,7 @@
 				E2991ABD27AC777300BF4B9A /* CharacterResponse.swift in Sources */,
 				E2512DAC27C82A5E00FC6129 /* LocationDto.swift in Sources */,
 				E26BD3A327D01629006CA548 /* DetailHeaderView.swift in Sources */,
+				E2900B9A27D3F74A0055AD96 /* ColoredToggleStyle.swift in Sources */,
 				E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */,
 				E2B5A95D27D0237600C14287 /* DetailStatusView.swift in Sources */,
 				E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */,
@@ -879,6 +894,7 @@
 				E2991ABB27AC771E00BF4B9A /* CharacterInfo.swift in Sources */,
 				E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */,
 				E2291D3327A5E908006D3FD8 /* SwiftRorty_iOSApp.swift in Sources */,
+				E2900B9C27D3FF720055AD96 /* UITabBarControllerExtension.swift in Sources */,
 				E2991AB727AC76D400BF4B9A /* Origin.swift in Sources */,
 				E2AD779E27CACD8D006565C2 /* CharacterListDto.swift in Sources */,
 			);

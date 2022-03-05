@@ -15,19 +15,16 @@ struct DetailScreen: View {
     
     init(id: Int) {
         _characterId = State(initialValue: id)
-        UITabBar.appearance().barTintColor = UIColor(Color.Primary)
     }
     
     var body: some View {
         ZStack {
             Color.Background.edgesIgnoringSafeArea(.all)
-            LazyVStack {
-                ScrollView {
-                    LazyVStack {
-                        DetailHeaderView(dto: viewModel.dto)
-                        DetailContentView(contents: viewModel.details, dto: viewModel.dto)
-                    }.padding(12)
-                }
+            ScrollView {
+                LazyVStack {
+                    DetailHeaderView(dto: viewModel.dto)
+                    DetailContentView(contents: viewModel.details, dto: viewModel.dto)
+                }.padding(12)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
