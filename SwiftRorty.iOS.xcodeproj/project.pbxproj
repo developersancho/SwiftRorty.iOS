@@ -394,11 +394,11 @@
 		E2291D6827A5EA72006D3FD8 /* detail */ = {
 			isa = PBXGroup;
 			children = (
+				E2B5A95C27D0237600C14287 /* DetailStatusView.swift */,
 				E26BD3A227D01629006CA548 /* DetailHeaderView.swift */,
 				E26BD3A427D01769006CA548 /* DetailContentView.swift */,
 				E2555C0E27A872E4007E5266 /* DetailScreen.swift */,
 				E26BD39E27CFFE51006CA548 /* DetailViewModel.swift */,
-				E2B5A95C27D0237600C14287 /* DetailStatusView.swift */,
 			);
 			path = detail;
 			sourceTree = "<group>";

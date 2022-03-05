@@ -30,7 +30,8 @@ struct DetailContentView: View {
                     }
                     Divider()
                 }
-            }.padding(EdgeInsets(top: 16, leading: 12, bottom: 0, trailing: 12))
+            }
+            .padding(.init(top: 16, leading: 12, bottom: 0, trailing: 12))
         }
     }
 }

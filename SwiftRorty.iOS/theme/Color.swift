@@ -19,6 +19,7 @@ extension Color {
     
     static let Card = Color(Color.Key.card.rawValue)
     static let Text = Color(Color.Key.text.rawValue)
+    static let ToggleRed = Color(Color.Key.toggleRed.rawValue)
     
     enum Key: String {
         case primary = "Primary"
@@ -29,5 +30,6 @@ extension Color {
         case unSelectedBottomItem = "UnselectedBottomItemColor"
         case card = "Card"
         case text = "Text"
+        case toggleRed = "ToggleRed"
     }
 }

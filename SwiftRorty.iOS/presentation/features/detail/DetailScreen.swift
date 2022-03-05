@@ -21,11 +21,13 @@ struct DetailScreen: View {
     var body: some View {
         ZStack {
             Color.Background.edgesIgnoringSafeArea(.all)
-            ScrollView {
-                LazyVStack {
-                    DetailHeaderView(dto: viewModel.dto)
-                    DetailContentView(contents: viewModel.details, dto: viewModel.dto)
-                }.padding(12)
+            LazyVStack {
+                ScrollView {
+                    LazyVStack {
+                        DetailHeaderView(dto: viewModel.dto)
+                        DetailContentView(contents: viewModel.details, dto: viewModel.dto)
+                    }.padding(12)
+                }
             }
         }
         .navigationBarTitleDisplayMode(.inline)
