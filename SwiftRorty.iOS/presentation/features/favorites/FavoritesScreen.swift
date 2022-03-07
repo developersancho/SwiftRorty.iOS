@@ -10,18 +10,22 @@ import SwiftUI
 struct FavoritesScreen: View {
     var body: some View {
         NavigationView {
-            ZStack{
-                Color.Background.edgesIgnoringSafeArea(.all)
-                HStack {
-                    Text("Favorites Screen")
-                        .fontTemplate(AppFontTemplate.title)
-                }
+            ScrollView {
+                LazyVStack {
+                    NavigationLink(
+                        destination: DetailScreen(id: CharacterDto.defaultDto().id ?? 1),
+                        label: {
+                            FavoriteRow(dto: CharacterDto.defaultDto())
+                        })
+                    
+                }.padding(10)
             }
+            .background(Color.Background)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text("Favorites").fontTemplate(AppFontTemplate.title)
+                        Text(LocalizedStringKey("toolbar_favorites_title")).fontTemplate(AppFontTemplate.title)
                     }
                 }
             }

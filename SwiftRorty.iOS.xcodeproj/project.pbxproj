@@ -10,6 +10,8 @@
 		3155791E6AFC1A9297EC0C5C /* Pods_SwiftRorty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397CB4F3F68E35B07531DC81 /* Pods_SwiftRorty_iOS.framework */; };
 		4F65BBBCDA8F855D60E13350 /* Pods_SwiftRorty_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D41769FB9452A3D307BAEA /* Pods_SwiftRorty_iOSTests.framework */; };
 		B562E625E95EC19F9FE52064 /* Pods_SwiftRorty_iOS_SwiftRorty_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF9784B384CDDC854807601 /* Pods_SwiftRorty_iOS_SwiftRorty_iOSUITests.framework */; };
+		E222E80327D693C900831125 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E222E80527D693C900831125 /* Localizable.strings */; };
+		E222E80727D6980600831125 /* LocalizedStringKeyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222E80627D6980600831125 /* LocalizedStringKeyExtension.swift */; };
 		E2291D3327A5E908006D3FD8 /* SwiftRorty_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D3227A5E908006D3FD8 /* SwiftRorty_iOSApp.swift */; };
 		E2291D3527A5E908006D3FD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D3427A5E908006D3FD8 /* ContentView.swift */; };
 		E2291D3727A5E909006D3FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2291D3627A5E909006D3FD8 /* Assets.xcassets */; };
@@ -54,6 +56,7 @@
 		E2900B9827D3F6290055AD96 /* VerticalToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */; };
 		E2900B9A27D3F74A0055AD96 /* ColoredToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9927D3F74A0055AD96 /* ColoredToggleStyle.swift */; };
 		E2900B9C27D3FF720055AD96 /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9B27D3FF720055AD96 /* UITabBarControllerExtension.swift */; };
+		E2900B9E27D40EC70055AD96 /* FavoriteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9D27D40EC70055AD96 /* FavoriteRow.swift */; };
 		E2991AA927AC72ED00BF4B9A /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AA827AC72ED00BF4B9A /* Status.swift */; };
 		E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AAE27AC740800BF4B9A /* LocationInfo.swift */; };
 		E2991AB127AC760E00BF4B9A /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2991AB027AC760E00BF4B9A /* LocationResponse.swift */; };
@@ -107,6 +110,8 @@
 		A7D41769FB9452A3D307BAEA /* Pods_SwiftRorty_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRorty_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA125747E2CA12BB1CC9DC61 /* Pods-SwiftRorty.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRorty.iOS.release.xcconfig"; path = "Target Support Files/Pods-SwiftRorty.iOS/Pods-SwiftRorty.iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D591464920D24BEDACCC3F78 /* Pods-SwiftRorty.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRorty.iOS.debug.xcconfig"; path = "Target Support Files/Pods-SwiftRorty.iOS/Pods-SwiftRorty.iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E222E80427D693C900831125 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E222E80627D6980600831125 /* LocalizedStringKeyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKeyExtension.swift; sourceTree = "<group>"; };
 		E2291D2F27A5E908006D3FD8 /* SwiftRorty.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRorty.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2291D3227A5E908006D3FD8 /* SwiftRorty_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRorty_iOSApp.swift; sourceTree = "<group>"; };
 		E2291D3427A5E908006D3FD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +160,7 @@
 		E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalToggleStyle.swift; sourceTree = "<group>"; };
 		E2900B9927D3F74A0055AD96 /* ColoredToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredToggleStyle.swift; sourceTree = "<group>"; };
 		E2900B9B27D3FF720055AD96 /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtension.swift; sourceTree = "<group>"; };
+		E2900B9D27D40EC70055AD96 /* FavoriteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRow.swift; sourceTree = "<group>"; };
 		E2991AA827AC72ED00BF4B9A /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		E2991AAE27AC740800BF4B9A /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
 		E2991AB027AC760E00BF4B9A /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
@@ -221,6 +227,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E222E80027D693A900831125 /* languages */ = {
+			isa = PBXGroup;
+			children = (
+				E222E80527D693C900831125 /* Localizable.strings */,
+			);
+			path = languages;
+			sourceTree = "<group>";
+		};
 		E2291D2627A5E908006D3FD8 = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +260,7 @@
 		E2291D3127A5E908006D3FD8 /* SwiftRorty.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E222E80027D693A900831125 /* languages */,
 				E2AF0A3F27CD88EB0012EE85 /* extensions */,
 				E232FA1527CD63AB0073FCC8 /* SwiftRorty-iOS-Info.plist */,
 				E232FA0727CD4DAF0073FCC8 /* theme */,
@@ -414,6 +429,7 @@
 		E2291D6927A5EA77006D3FD8 /* favorites */ = {
 			isa = PBXGroup;
 			children = (
+				E2900B9D27D40EC70055AD96 /* FavoriteRow.swift */,
 				E2555C0827A87292007E5266 /* FavoritesScreen.swift */,
 				E2555C0A27A872A2007E5266 /* FavoritesViewModel.swift */,
 			);
@@ -578,6 +594,7 @@
 				E2B5A95A27D0223700C14287 /* UIApplicationExtension.swift */,
 				E2B5A95E27D0258200C14287 /* BundleExtension.swift */,
 				E2900B9B27D3FF720055AD96 /* UITabBarControllerExtension.swift */,
+				E222E80627D6980600831125 /* LocalizedStringKeyExtension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -685,7 +702,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				tr,
 			);
 			mainGroup = E2291D2627A5E908006D3FD8;
 			productRefGroup = E2291D3027A5E908006D3FD8 /* Products */;
@@ -707,6 +724,7 @@
 				E2291D3A27A5E90A006D3FD8 /* Preview Assets.xcassets in Resources */,
 				E232FA1227CD56780073FCC8 /* Raleway-Regular.ttf in Resources */,
 				E232FA0F27CD56780073FCC8 /* Raleway-SemiBold.ttf in Resources */,
+				E222E80327D693C900831125 /* Localizable.strings in Resources */,
 				E2291D3727A5E909006D3FD8 /* Assets.xcassets in Resources */,
 				E232FA1027CD56780073FCC8 /* Raleway-Medium.ttf in Resources */,
 				E232FA1127CD56780073FCC8 /* Raleway-Bold.ttf in Resources */,
@@ -847,6 +865,7 @@
 				E2991AB327AC766300BF4B9A /* EpisodeInfo.swift in Sources */,
 				E2512DB027C82B0000FC6129 /* KeyValueModel.swift in Sources */,
 				E2AD779A27CAC1E8006565C2 /* RestClient.swift in Sources */,
+				E222E80727D6980600831125 /* LocalizedStringKeyExtension.swift in Sources */,
 				E232FA0627CD4D570073FCC8 /* Endpoint.swift in Sources */,
 				E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */,
 				E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */,
@@ -866,6 +885,7 @@
 				E2991AB127AC760E00BF4B9A /* LocationResponse.swift in Sources */,
 				E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */,
 				E2291D3527A5E908006D3FD8 /* ContentView.swift in Sources */,
+				E2900B9E27D40EC70055AD96 /* FavoriteRow.swift in Sources */,
 				E2555C0D27A872D5007E5266 /* SettingsScreen.swift in Sources */,
 				E2D5A98927C977A30017DA32 /* BaseError.swift in Sources */,
 				E2D5A98B27C977EF0017DA32 /* Decoder.swift in Sources */,
@@ -932,11 +952,23 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		E222E80527D693C900831125 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E222E80427D693C900831125 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		E2291D5127A5E90A006D3FD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -998,6 +1030,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

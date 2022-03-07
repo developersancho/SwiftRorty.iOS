@@ -15,6 +15,7 @@ struct SwiftRorty_iOSApp: App {
     var body: some Scene {
         WindowGroup {
             SplashScreen().preferredColorScheme(isDarkMode ? .dark : .light)
+                .environment(\.locale, .init(identifier: "en"))
         }
     }
 }

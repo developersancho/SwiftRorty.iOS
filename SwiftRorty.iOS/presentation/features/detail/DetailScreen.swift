@@ -31,7 +31,7 @@ struct DetailScreen: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 VStack {
-                    Text("Details").fontTemplate(AppFontTemplate.title)
+                    Text(LocalizedStringKey("toolbar_detail_title")).fontTemplate(AppFontTemplate.title)
                 }
             }
         }

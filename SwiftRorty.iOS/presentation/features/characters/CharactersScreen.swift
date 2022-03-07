@@ -42,7 +42,7 @@ struct CharactersScreen: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text("Characters").fontTemplate(AppFontTemplate.title)
+                        Text(LocalizedStringKey("toolbar_characters_title")).fontTemplate(AppFontTemplate.title)
                     }
                 }
             }.onAppear(perform: {

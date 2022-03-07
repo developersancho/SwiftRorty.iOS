@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import Combine
 import Resolver
+import SwiftUI
 
 class DetailViewModel: ObservableObject {
     @Injected
@@ -35,35 +36,35 @@ class DetailViewModel: ObservableObject {
         list.append(
             KeyValueModel(
                 id: 0,
-                key: "Name",
+                key: LocalizedStringKey("text_name").toString(),
                 value: character.name
             )
         )
         list.append(
             KeyValueModel(
                 id: 1,
-                key: "Species",
+                key: LocalizedStringKey("text_species").toString(),
                 value: character.species
             )
         )
         list.append(
             KeyValueModel(
                 id: 2,
-                key: "Gender",
+                key: LocalizedStringKey("text_gender").toString(),
                 value: character.gender
             )
         )
         list.append(
             KeyValueModel(
                 id: 3,
-                key: "Last Know Location",
+                key: LocalizedStringKey("text_last_know_location").toString(),
                 value: character.origin?.name ?? "-"
             )
         )
         list.append(
             KeyValueModel(
                 id: 4,
-                key: "Location",
+                key: LocalizedStringKey("text_location").toString(),
                 value: character.location?.name ?? "-"
             )
         )
