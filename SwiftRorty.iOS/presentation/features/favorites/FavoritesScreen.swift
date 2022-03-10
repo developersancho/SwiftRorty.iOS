@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct FavoritesScreen: View {
+    @StateObject
+    private var viewModel = FavoritesViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack {
-                    NavigationLink(
-                        destination: DetailScreen(id: CharacterDto.defaultDto().id ?? 1),
-                        label: {
-                            FavoriteRow(dto: CharacterDto.defaultDto())
-                        })
-                    
+                    ForEach(viewModel.favorites, id: \.id) { character in
+                        NavigationLink(
+                            destination: DetailScreen(id: character.id),
+                            label: {
+                                FavoriteRow(dto: character)
+                            })
+                    }
                 }.padding(10)
             }
             .background(Color.Background)
@@ -28,7 +32,9 @@ struct FavoritesScreen: View {
                         Text(LocalizedStringKey("toolbar_favorites_title")).fontTemplate(AppFontTemplate.title)
                     }
                 }
-            }
+            }.onAppear(perform: {
+                viewModel.loadFavorites()
+            })
         }
     }
 }

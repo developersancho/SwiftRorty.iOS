@@ -24,7 +24,7 @@ struct SettingsScreen: View {
                         .toggleStyle(ColoredToggleStyle())
                         //.toggleStyle(SwitchToggleStyle(tint: .ToggleRed))
                         .onChange(of: isDarkMode, perform: { value in
-                            
+                            Log.debug("isDarkMode => \(isDarkMode)")
                         })
                 }
                 Divider()

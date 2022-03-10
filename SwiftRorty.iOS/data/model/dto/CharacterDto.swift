@@ -12,7 +12,7 @@ struct CharacterDto: Identifiable {
     let created: String?
     let episode: [String]?
     let gender: String?
-    let id: Int?
+    let id: Int
     let image: String?
     let location: Location?
     let name: String?

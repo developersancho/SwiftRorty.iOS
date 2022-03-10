@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct CharactersScreen: View {
-    @StateObject private var viewModel = CharactersViewModel()
+//    @StateObject
+//    private var viewModel = CharactersViewModel()
+    @ObservedObject
+    var viewModel = CharactersViewModel()
     
     var body: some View {
         NavigationView {
@@ -20,11 +23,13 @@ struct CharactersScreen: View {
                         
                         ForEach(viewModel.charactersList, id: \.id) { character in
                             NavigationLink(
-                                destination: DetailScreen(id: character.id ?? 1),
+                                destination: DetailScreen(id: character.id),
                                 label: {
                                     CharacterRow(dto: character) { favorState in
-                                        print(favorState)
-                                        //viewModel
+                                        Log.debug("\(favorState)")
+                                        //viewModel.charactersList.first(where: { $0.id == character.id })?.isFavorite = favorState
+                                        viewModel.updateFavor(dto: character)
+                                        //dto?.isFavorite = true
                                     }
                                 })
                         }

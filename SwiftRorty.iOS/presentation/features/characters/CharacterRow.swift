@@ -9,6 +9,7 @@ import SwiftUI
 import Foundation
 
 struct CharacterRow: View {
+    //@Binding
     var dto: CharacterDto
     var callback: ((_ favorState: Bool) -> Void)?
     
@@ -70,8 +71,9 @@ struct CharacterRow: View {
                         Button(action: {
                             favor = !favor
                             callback?(favor)
+                            //dto.isFavorite = favor
                         }) {
-                            if favor {
+                            if dto.isFavorite {
                                 Image(systemName: "heart.fill").foregroundColor(Color.red)
                             } else {
                                 Image(systemName: "heart.fill").foregroundColor(Color.gray)

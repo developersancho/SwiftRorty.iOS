@@ -12,6 +12,8 @@
 		B562E625E95EC19F9FE52064 /* Pods_SwiftRorty_iOS_SwiftRorty_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF9784B384CDDC854807601 /* Pods_SwiftRorty_iOS_SwiftRorty_iOSUITests.framework */; };
 		E222E80327D693C900831125 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E222E80527D693C900831125 /* Localizable.strings */; };
 		E222E80727D6980600831125 /* LocalizedStringKeyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222E80627D6980600831125 /* LocalizedStringKeyExtension.swift */; };
+		E222E80A27D6A26300831125 /* RortyDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E222E80827D6A26300831125 /* RortyDatabase.xcdatamodeld */; };
+		E222E80C27D6A3B400831125 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222E80B27D6A3B400831125 /* CoreDataManager.swift */; };
 		E2291D3327A5E908006D3FD8 /* SwiftRorty_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D3227A5E908006D3FD8 /* SwiftRorty_iOSApp.swift */; };
 		E2291D3527A5E908006D3FD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2291D3427A5E908006D3FD8 /* ContentView.swift */; };
 		E2291D3727A5E909006D3FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2291D3627A5E909006D3FD8 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		E232FA1927CD6D9B0073FCC8 /* FontTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */; };
 		E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */; };
 		E232FA1D27CD6DF00073FCC8 /* AppFontTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */; };
+		E249C91627D944C700B6D75E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C91527D944C700B6D75E /* Logger.swift */; };
+		E249C91827D9456C00B6D75E /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C91727D9456C00B6D75E /* FavoriteRepository.swift */; };
 		E2512DAC27C82A5E00FC6129 /* LocationDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DAB27C82A5E00FC6129 /* LocationDto.swift */; };
 		E2512DAE27C82AAC00FC6129 /* CharacterDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DAD27C82AAC00FC6129 /* CharacterDto.swift */; };
 		E2512DB027C82B0000FC6129 /* KeyValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DAF27C82B0000FC6129 /* KeyValueModel.swift */; };
@@ -74,6 +78,8 @@
 		E2B5A95B27D0223700C14287 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B5A95A27D0223700C14287 /* UIApplicationExtension.swift */; };
 		E2B5A95D27D0237600C14287 /* DetailStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B5A95C27D0237600C14287 /* DetailStatusView.swift */; };
 		E2B5A95F27D0258200C14287 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B5A95E27D0258200C14287 /* BundleExtension.swift */; };
+		E2CAB78E27DA705B00C8BFFB /* GetFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAB78D27DA705B00C8BFFB /* GetFavorites.swift */; };
+		E2CAB79027DA707800C8BFFB /* UpdateFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAB78F27DA707800C8BFFB /* UpdateFavorite.swift */; };
 		E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98227C96E3E0017DA32 /* APIMethod.swift */; };
 		E2D5A98527C974010017DA32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98427C974010017DA32 /* APIClient.swift */; };
 		E2D5A98727C9771D0017DA32 /* APIClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */; };
@@ -112,6 +118,8 @@
 		D591464920D24BEDACCC3F78 /* Pods-SwiftRorty.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRorty.iOS.debug.xcconfig"; path = "Target Support Files/Pods-SwiftRorty.iOS/Pods-SwiftRorty.iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E222E80427D693C900831125 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E222E80627D6980600831125 /* LocalizedStringKeyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKeyExtension.swift; sourceTree = "<group>"; };
+		E222E80927D6A26300831125 /* RortyDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RortyDatabase.xcdatamodel; sourceTree = "<group>"; };
+		E222E80B27D6A3B400831125 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		E2291D2F27A5E908006D3FD8 /* SwiftRorty.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRorty.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2291D3227A5E908006D3FD8 /* SwiftRorty_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRorty_iOSApp.swift; sourceTree = "<group>"; };
 		E2291D3427A5E908006D3FD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +143,8 @@
 		E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTemplate.swift; sourceTree = "<group>"; };
 		E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTemplateModifier.swift; sourceTree = "<group>"; };
 		E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontTemplate.swift; sourceTree = "<group>"; };
+		E249C91527D944C700B6D75E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E249C91727D9456C00B6D75E /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
 		E2512DAB27C82A5E00FC6129 /* LocationDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDto.swift; sourceTree = "<group>"; };
 		E2512DAD27C82AAC00FC6129 /* CharacterDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDto.swift; sourceTree = "<group>"; };
 		E2512DAF27C82B0000FC6129 /* KeyValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueModel.swift; sourceTree = "<group>"; };
@@ -178,6 +188,8 @@
 		E2B5A95A27D0223700C14287 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		E2B5A95C27D0237600C14287 /* DetailStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStatusView.swift; sourceTree = "<group>"; };
 		E2B5A95E27D0258200C14287 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		E2CAB78D27DA705B00C8BFFB /* GetFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavorites.swift; sourceTree = "<group>"; };
+		E2CAB78F27DA707800C8BFFB /* UpdateFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFavorite.swift; sourceTree = "<group>"; };
 		E2D5A98227C96E3E0017DA32 /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E2D5A98427C974010017DA32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E2D5A98627C9771D0017DA32 /* APIClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientImpl.swift; sourceTree = "<group>"; };
@@ -317,8 +329,8 @@
 		E2291D5D27A5E948006D3FD8 /* domain */ = {
 			isa = PBXGroup;
 			children = (
-				E2555C0627A87252007E5266 /* GetCharacters.swift */,
-				E26BD3A027D002B0006CA548 /* GetCharacterDetail.swift */,
+				E249C91927D9467900B6D75E /* characters */,
+				E249C91A27D9468400B6D75E /* favorites */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -344,7 +356,9 @@
 		E2291D6027A5E96C006D3FD8 /* local */ = {
 			isa = PBXGroup;
 			children = (
+				E222E80827D6A26300831125 /* RortyDatabase.xcdatamodeld */,
 				E2555C0227A87220007E5266 /* FavoriteDao.swift */,
+				E222E80B27D6A3B400831125 /* CoreDataManager.swift */,
 			);
 			path = local;
 			sourceTree = "<group>";
@@ -362,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				E2555C0427A87238007E5266 /* CharacterRepository.swift */,
+				E249C91727D9456C00B6D75E /* FavoriteRepository.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -369,6 +384,7 @@
 		E2291D6327A5E992006D3FD8 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				E249C91427D944B500B6D75E /* log */,
 				E2AD779827CAC1CE006565C2 /* network */,
 				E28A38C027C94B19005DD497 /* network_2 */,
 			);
@@ -463,6 +479,32 @@
 				E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		E249C91427D944B500B6D75E /* log */ = {
+			isa = PBXGroup;
+			children = (
+				E249C91527D944C700B6D75E /* Logger.swift */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		E249C91927D9467900B6D75E /* characters */ = {
+			isa = PBXGroup;
+			children = (
+				E2555C0627A87252007E5266 /* GetCharacters.swift */,
+				E26BD3A027D002B0006CA548 /* GetCharacterDetail.swift */,
+			);
+			path = characters;
+			sourceTree = "<group>";
+		};
+		E249C91A27D9468400B6D75E /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAB78D27DA705B00C8BFFB /* GetFavorites.swift */,
+				E2CAB78F27DA707800C8BFFB /* UpdateFavorite.swift */,
+			);
+			path = favorites;
 			sourceTree = "<group>";
 		};
 		E2555BFD27A8716A007E5266 /* base */ = {
@@ -867,8 +909,10 @@
 				E2AD779A27CAC1E8006565C2 /* RestClient.swift in Sources */,
 				E222E80727D6980600831125 /* LocalizedStringKeyExtension.swift in Sources */,
 				E232FA0627CD4D570073FCC8 /* Endpoint.swift in Sources */,
+				E2CAB79027DA707800C8BFFB /* UpdateFavorite.swift in Sources */,
 				E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */,
 				E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */,
+				E222E80A27D6A26300831125 /* RortyDatabase.xcdatamodeld in Sources */,
 				E2900B9827D3F6290055AD96 /* VerticalToggleStyle.swift in Sources */,
 				E2D5A99127C9986C0017DA32 /* CharacterRow.swift in Sources */,
 				E26BD39F27CFFE51006CA548 /* DetailViewModel.swift in Sources */,
@@ -883,12 +927,14 @@
 				E2555C1127A872F2007E5266 /* HomeScreen.swift in Sources */,
 				E232FA1D27CD6DF00073FCC8 /* AppFontTemplate.swift in Sources */,
 				E2991AB127AC760E00BF4B9A /* LocationResponse.swift in Sources */,
+				E249C91827D9456C00B6D75E /* FavoriteRepository.swift in Sources */,
 				E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */,
 				E2291D3527A5E908006D3FD8 /* ContentView.swift in Sources */,
 				E2900B9E27D40EC70055AD96 /* FavoriteRow.swift in Sources */,
 				E2555C0D27A872D5007E5266 /* SettingsScreen.swift in Sources */,
 				E2D5A98927C977A30017DA32 /* BaseError.swift in Sources */,
 				E2D5A98B27C977EF0017DA32 /* Decoder.swift in Sources */,
+				E249C91627D944C700B6D75E /* Logger.swift in Sources */,
 				E2D5A98D27C97AC20017DA32 /* APIEndpoint.swift in Sources */,
 				E2B5A95F27D0258200C14287 /* BundleExtension.swift in Sources */,
 				E26BD3A527D01769006CA548 /* DetailContentView.swift in Sources */,
@@ -900,6 +946,7 @@
 				E2512DAC27C82A5E00FC6129 /* LocationDto.swift in Sources */,
 				E26BD3A327D01629006CA548 /* DetailHeaderView.swift in Sources */,
 				E2900B9A27D3F74A0055AD96 /* ColoredToggleStyle.swift in Sources */,
+				E222E80C27D6A3B400831125 /* CoreDataManager.swift in Sources */,
 				E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */,
 				E2B5A95D27D0237600C14287 /* DetailStatusView.swift in Sources */,
 				E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */,
@@ -915,6 +962,7 @@
 				E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */,
 				E2291D3327A5E908006D3FD8 /* SwiftRorty_iOSApp.swift in Sources */,
 				E2900B9C27D3FF720055AD96 /* UITabBarControllerExtension.swift in Sources */,
+				E2CAB78E27DA705B00C8BFFB /* GetFavorites.swift in Sources */,
 				E2991AB727AC76D400BF4B9A /* Origin.swift in Sources */,
 				E2AD779E27CACD8D006565C2 /* CharacterListDto.swift in Sources */,
 			);
@@ -1264,6 +1312,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E222E80827D6A26300831125 /* RortyDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E222E80927D6A26300831125 /* RortyDatabase.xcdatamodel */,
+			);
+			currentVersion = E222E80927D6A26300831125 /* RortyDatabase.xcdatamodel */;
+			path = RortyDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E2291D2727A5E908006D3FD8 /* Project object */;
 }
