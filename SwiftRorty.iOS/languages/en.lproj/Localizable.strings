@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  SwiftRorty.iOS
+
+  Created by developersancho on 7.03.2022.
+  
+*/
+
+"bottom_menu_characters" = "Characters";
+"bottom_menu_favorites" = "Favorites";
+"bottom_menu_settings" = "Settings";
+"toolbar_characters_title" = "Characters";
+"toolbar_favorites_title" = "Favorites";
+"toolbar_settings_title" = "Settings";
+"toolbar_detail_title" = "Detail";
+
+"text_theme_mode" = "Theme Mode";
+"text_app_version" = "App Version";
+
+"text_name" = "Name";
+"text_species" = "Species";
+"text_gender" = "Gender";
+"text_last_know_location" = "Last Know Location";
+"text_location" = "Location";
+"text_no_data_found" = "No suitable data found.";
+

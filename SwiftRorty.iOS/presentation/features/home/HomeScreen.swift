@@ -28,13 +28,13 @@ struct HomeScreen: View {
     var body: some View {
         TabView {
             CharactersScreen().tabItem {
-                Label("Characters", systemImage: "magazine").fontTemplate(AppFontTemplate.body5)
+                Label(LocalizedStringKey("bottom_menu_characters"), systemImage: "magazine").fontTemplate(AppFontTemplate.body5)
             }
             FavoritesScreen().tabItem {
-                Label("Favorites", systemImage: "heart").fontTemplate(AppFontTemplate.body5)
+                Label(LocalizedStringKey("bottom_menu_favorites"), systemImage: "heart").fontTemplate(AppFontTemplate.body5)
             }
             SettingsScreen().tabItem {
-                Label("Settings", systemImage: "gearshape").fontTemplate(AppFontTemplate.body5)
+                Label(LocalizedStringKey("bottom_menu_settings"), systemImage: "gearshape").fontTemplate(AppFontTemplate.body5)
             }
         }
         .accentColor(Color.SelectedBottomItem)

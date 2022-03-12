@@ -17,19 +17,19 @@ struct SettingsScreen: View {
             
             VStack(alignment: .leading, spacing: 12) {
                 HStack(alignment: .center) {
-                    Text("Theme Mode")
+                    Text(LocalizedStringKey("text_theme_mode"))
                         .fontTemplate(AppFontTemplate.body4)
                     Spacer()
                     Toggle("", isOn: $isDarkMode)
                         .toggleStyle(ColoredToggleStyle())
                         //.toggleStyle(SwitchToggleStyle(tint: .ToggleRed))
                         .onChange(of: isDarkMode, perform: { value in
-                            
+                            Log.debug("isDarkMode => \(isDarkMode)")
                         })
                 }
                 Divider()
                 HStack(alignment: .center) {
-                    Text("App Version")
+                    Text(LocalizedStringKey("text_app_version"))
                         .fontTemplate(AppFontTemplate.body4)
                     Spacer()
                     Text("\(UIApplication.appVersion())")
@@ -56,7 +56,7 @@ struct SettingsScreen: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text("Settings").fontTemplate(AppFontTemplate.title)
+                        Text(LocalizedStringKey("toolbar_settings_title")).fontTemplate(AppFontTemplate.title)
                     }
                 }
             }

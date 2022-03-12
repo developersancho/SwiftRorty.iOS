@@ -33,7 +33,6 @@ struct SplashScreen: View {
                     }
                 }
             })
-            .preferredColorScheme(.dark)
         }
     }
 }

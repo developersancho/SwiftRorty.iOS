@@ -8,23 +8,43 @@
 import SwiftUI
 
 struct FavoritesScreen: View {
+    @ObservedObject
+    private var viewModel = FavoritesViewModel()
+    
     var body: some View {
         NavigationView {
-            ZStack{
-                Color.Background.edgesIgnoringSafeArea(.all)
-                HStack {
-                    Text("Favorites Screen")
-                        .fontTemplate(AppFontTemplate.title)
+            ScrollView {
+                LazyVStack {
+                    ForEach(viewModel.favorites, id: \.id) { character in
+                        NavigationLink(
+                            destination: DetailScreen(id: character.id),
+                            label: {
+                                FavoriteRow(dto: character)
+                            })
+                    }
+                }
+                .padding(10)
+                .emptyState(viewModel.favorites.isEmpty) {
+                    LazyVStack {
+                        LottieView(name: "empty", loopMode: .loop)
+                            .frame(width: 250, height: 250)
+                            .padding(.init(top: 20, leading: 0, bottom: 10, trailing: 0))
+                        Spacer()
+                        Text(LocalizedStringKey("text_no_data_found")).fontTemplate(AppFontTemplate.heading)
+                    }
                 }
             }
+            .background(Color.Background)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text("Favorites").fontTemplate(AppFontTemplate.title)
+                        Text(LocalizedStringKey("toolbar_favorites_title")).fontTemplate(AppFontTemplate.title)
                     }
                 }
-            }
+            }.onAppear(perform: {
+                viewModel.loadFavorites()
+            })
         }
     }
 }

@@ -19,6 +19,7 @@ extension Resolver: ResolverRegistering {
     
     private static func registerSingletons() {
         register { RestClientImpl() as RestClient }.scope(.application)
+        register { CoreDataManager() }.scope(.application)
     }
     
     private static func registerRemote() {
@@ -27,11 +28,14 @@ extension Resolver: ResolverRegistering {
     
     private static func registerRepository() {
         register { CharacterRepository() }
+        register { FavoriteRepository() }
     }
     
     private static func registerDomain() {
         register { GetCharacters() }
         register { GetCharacterDetail() }
+        register { GetFavorites() }
+        register { UpdateFavorite() }
     }
     
 }

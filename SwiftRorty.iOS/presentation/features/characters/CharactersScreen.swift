@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CharactersScreen: View {
-    @StateObject private var viewModel = CharactersViewModel()
+    @ObservedObject
+    var viewModel = CharactersViewModel()
     
     var body: some View {
         NavigationView {
@@ -20,11 +21,11 @@ struct CharactersScreen: View {
                         
                         ForEach(viewModel.charactersList, id: \.id) { character in
                             NavigationLink(
-                                destination: DetailScreen(id: character.id ?? 1),
+                                destination: DetailScreen(id: character.id),
                                 label: {
                                     CharacterRow(dto: character) { favorState in
-                                        print(favorState)
-                                        //viewModel
+                                        Log.debug("\(favorState)")
+                                        viewModel.updateFavor(dto: character, state: favorState)
                                     }
                                 })
                         }
@@ -42,7 +43,7 @@ struct CharactersScreen: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text("Characters").fontTemplate(AppFontTemplate.title)
+                        Text(LocalizedStringKey("toolbar_characters_title")).fontTemplate(AppFontTemplate.title)
                     }
                 }
             }.onAppear(perform: {
