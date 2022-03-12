@@ -36,6 +36,7 @@ extension Resolver: ResolverRegistering {
         register { GetCharacterDetail() }
         register { GetFavorites() }
         register { UpdateFavorite() }
+        register { DeleteFavorite() }
     }
     
 }

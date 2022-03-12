@@ -41,7 +41,6 @@
 		E2512DB227C830FF00FC6129 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DB127C830FF00FC6129 /* StringExtension.swift */; };
 		E2555BFF27A87181007E5266 /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555BFE27A87181007E5266 /* PageInfo.swift */; };
 		E2555C0127A87209007E5266 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0027A87209007E5266 /* CharacterService.swift */; };
-		E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0227A87220007E5266 /* FavoriteDao.swift */; };
 		E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0427A87238007E5266 /* CharacterRepository.swift */; };
 		E2555C0727A87252007E5266 /* GetCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0627A87252007E5266 /* GetCharacters.swift */; };
 		E2555C0927A87292007E5266 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2555C0827A87292007E5266 /* FavoritesScreen.swift */; };
@@ -91,6 +90,10 @@
 		E2D5A98D27C97AC20017DA32 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98C27C97AC20017DA32 /* APIEndpoint.swift */; };
 		E2D5A98F27C97CEC0017DA32 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A98E27C97CEC0017DA32 /* URLRequest.swift */; };
 		E2D5A99127C9986C0017DA32 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5A99027C9986C0017DA32 /* CharacterRow.swift */; };
+		E2F4382627DD2AE900FBE6B7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4382527DD2AE900FBE6B7 /* RoundedCorner.swift */; };
+		E2F4382827DD2B1D00FBE6B7 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4382727DD2B1D00FBE6B7 /* BottomSheet.swift */; };
+		E2F4382A27DD2B4F00FBE6B7 /* BottomSheetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4382927DD2B4F00FBE6B7 /* BottomSheetExtension.swift */; };
+		E2F4382C27DD2E8B00FBE6B7 /* DeleteFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4382B27DD2E8B00FBE6B7 /* DeleteFavorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,7 +157,6 @@
 		E2512DB127C830FF00FC6129 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E2555BFE27A87181007E5266 /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
 		E2555C0027A87209007E5266 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
-		E2555C0227A87220007E5266 /* FavoriteDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDao.swift; sourceTree = "<group>"; };
 		E2555C0427A87238007E5266 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		E2555C0627A87252007E5266 /* GetCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacters.swift; sourceTree = "<group>"; };
 		E2555C0827A87292007E5266 /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
@@ -204,6 +206,10 @@
 		E2D5A98C27C97AC20017DA32 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		E2D5A98E27C97CEC0017DA32 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		E2D5A99027C9986C0017DA32 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		E2F4382527DD2AE900FBE6B7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		E2F4382727DD2B1D00FBE6B7 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		E2F4382927DD2B4F00FBE6B7 /* BottomSheetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetExtension.swift; sourceTree = "<group>"; };
+		E2F4382B27DD2E8B00FBE6B7 /* DeleteFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFavorite.swift; sourceTree = "<group>"; };
 		FBC764D589ED3F7A68CCFA96 /* Pods-SwiftRorty.iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRorty.iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftRorty.iOSTests/Pods-SwiftRorty.iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -364,7 +370,6 @@
 			isa = PBXGroup;
 			children = (
 				E222E80827D6A26300831125 /* RortyDatabase.xcdatamodeld */,
-				E2555C0227A87220007E5266 /* FavoriteDao.swift */,
 				E222E80B27D6A3B400831125 /* CoreDataManager.swift */,
 			);
 			path = local;
@@ -510,6 +515,7 @@
 			children = (
 				E2CAB78D27DA705B00C8BFFB /* GetFavorites.swift */,
 				E2CAB78F27DA707800C8BFFB /* UpdateFavorite.swift */,
+				E2F4382B27DD2E8B00FBE6B7 /* DeleteFavorite.swift */,
 			);
 			path = favorites;
 			sourceTree = "<group>";
@@ -526,6 +532,7 @@
 		E267D17527C9188300254746 /* component */ = {
 			isa = PBXGroup;
 			children = (
+				E2F4382427DD2ADB00FBE6B7 /* bottomsheet */,
 				E267D17627C9189700254746 /* LottieView.swift */,
 				E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */,
 				E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */,
@@ -656,6 +663,16 @@
 				E27D2FEF27DBE28E00A9B5B8 /* ViewExtension.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		E2F4382427DD2ADB00FBE6B7 /* bottomsheet */ = {
+			isa = PBXGroup;
+			children = (
+				E2F4382527DD2AE900FBE6B7 /* RoundedCorner.swift */,
+				E2F4382727DD2B1D00FBE6B7 /* BottomSheet.swift */,
+				E2F4382927DD2B4F00FBE6B7 /* BottomSheetExtension.swift */,
+			);
+			path = bottomsheet;
 			sourceTree = "<group>";
 		};
 		FE5D0614452C9D5795CE3E9B /* Pods */ = {
@@ -925,6 +942,7 @@
 				E2991AB327AC766300BF4B9A /* EpisodeInfo.swift in Sources */,
 				E2512DB027C82B0000FC6129 /* KeyValueModel.swift in Sources */,
 				E2AD779A27CAC1E8006565C2 /* RestClient.swift in Sources */,
+				E2F4382827DD2B1D00FBE6B7 /* BottomSheet.swift in Sources */,
 				E222E80727D6980600831125 /* LocalizedStringKeyExtension.swift in Sources */,
 				E232FA0627CD4D570073FCC8 /* Endpoint.swift in Sources */,
 				E2CAB79027DA707800C8BFFB /* UpdateFavorite.swift in Sources */,
@@ -943,11 +961,14 @@
 				E232FA1927CD6D9B0073FCC8 /* FontTemplate.swift in Sources */,
 				E2512DB227C830FF00FC6129 /* StringExtension.swift in Sources */,
 				E2555C1127A872F2007E5266 /* HomeScreen.swift in Sources */,
+				E2F4382627DD2AE900FBE6B7 /* RoundedCorner.swift in Sources */,
+				E2F4382C27DD2E8B00FBE6B7 /* DeleteFavorite.swift in Sources */,
 				E232FA1D27CD6DF00073FCC8 /* AppFontTemplate.swift in Sources */,
 				E2991AB127AC760E00BF4B9A /* LocationResponse.swift in Sources */,
 				E249C91827D9456C00B6D75E /* FavoriteRepository.swift in Sources */,
 				E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */,
 				E2291D3527A5E908006D3FD8 /* ContentView.swift in Sources */,
+				E2F4382A27DD2B4F00FBE6B7 /* BottomSheetExtension.swift in Sources */,
 				E2900B9E27D40EC70055AD96 /* FavoriteRow.swift in Sources */,
 				E2555C0D27A872D5007E5266 /* SettingsScreen.swift in Sources */,
 				E2D5A98927C977A30017DA32 /* BaseError.swift in Sources */,
@@ -968,7 +989,6 @@
 				E222E80C27D6A3B400831125 /* CoreDataManager.swift in Sources */,
 				E2AD779C27CAC242006565C2 /* RestClientErrors.swift in Sources */,
 				E2B5A95D27D0237600C14287 /* DetailStatusView.swift in Sources */,
-				E2555C0327A87220007E5266 /* FavoriteDao.swift in Sources */,
 				E2555C0F27A872E4007E5266 /* DetailScreen.swift in Sources */,
 				E2D5A98727C9771D0017DA32 /* APIClientImpl.swift in Sources */,
 				E2991AA927AC72ED00BF4B9A /* Status.swift in Sources */,

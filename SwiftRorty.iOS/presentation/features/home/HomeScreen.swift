@@ -30,7 +30,8 @@ struct HomeScreen: View {
             CharactersScreen().tabItem {
                 Label(LocalizedStringKey("bottom_menu_characters"), systemImage: "magazine").fontTemplate(AppFontTemplate.body5)
             }
-            FavoritesScreen().tabItem {
+            FavoritesScreen()
+                .tabItem {
                 Label(LocalizedStringKey("bottom_menu_favorites"), systemImage: "heart").fontTemplate(AppFontTemplate.body5)
             }
             SettingsScreen().tabItem {

@@ -24,3 +24,8 @@
 "text_location" = "Location";
 "text_no_data_found" = "No suitable data found.";
 
+"text_approve_remove" = "Approve Remove";
+"text_favor_delete" = "Favorite Delete";
+"text_cancel" = "Cancel";
+"text_delete_favor_description %@" = "Performing this operation, do you approve the deregistration of %@?";
+

@@ -10,6 +10,8 @@ import SwiftUI
 struct FavoriteRow: View {
     var dto: CharacterDto
     
+    var callback: (() -> Void)
+    
     var body: some View {
         HStack {
             if let image = dto.image,
@@ -66,9 +68,13 @@ struct FavoriteRow: View {
                 maxHeight: .infinity,
                 alignment: .topLeading
             )
+            
+            Button (action: { callback() }) {
+                Label("", systemImage: "trash")
+            }
+            .tint(.ToggleRed)
         }
-        .frame(width: .infinity)
-        .padding(10)
+        .padding(.all, 8)
         .background(Color.Card)
         .cornerRadius(8)
         .shadow(radius: 2)
@@ -78,6 +84,8 @@ struct FavoriteRow: View {
 
 struct FavoriteRow_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteRow(dto: CharacterDto.defaultDto())
+        FavoriteRow(dto: CharacterDto.defaultDto(), callback: {
+            
+        })
     }
 }

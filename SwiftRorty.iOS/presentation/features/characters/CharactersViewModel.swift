@@ -11,34 +11,6 @@ import Combine
 import Resolver
 
 class CharactersViewModel: ObservableObject {
-    //    private let getCharacters: GetCharacters = GetCharacters()
-    //    private var disposables = Set<AnyCancellable>()
-    //
-    //    @Published var dataSource: [CharacterDto]
-    //
-    //    init(_ getCharacters: GetCharacters = GetCharacters()){
-    //        self.dataSource = []
-    //        self.getCharacters = getCharacters
-    //    }
-    //
-    //    func fetch() {
-    //        getCharacters.invoke(page: 1)
-    //        .receive(on: DispatchQueue.main)
-    //        .sink(receiveCompletion: { [weak self] value in
-    //            guard let self = self else { return }
-    //            switch value {
-    //            case .failure:
-    //                self.dataSource = []
-    //            case .finished:
-    //                break
-    //            }
-    //        }) { [weak self] characters in
-    //            guard let self = self else { return }
-    //            self.dataSource = characters!
-    //        }.store(in: &disposables)
-    //    }
-    
-    //private let getCharacters: GetCharacters = GetCharacters()
     @Injected private var getCharacters: GetCharacters
     
     @Injected
@@ -55,6 +27,12 @@ class CharactersViewModel: ObservableObject {
     private var totalPages = 0
     @Published var hasMorePages = false
     
+   private func resetPaging() {
+        self.page = 1
+        self.totalPages = 0
+        self.charactersList.removeAll()
+    }
+    
     func changeIsFavorite(for character: CharacterDto, favor: Bool) {
         objectWillChange.send() // emits a change from the Store
         //character.isFavorite = favor
@@ -64,10 +42,10 @@ class CharactersViewModel: ObservableObject {
     }
     
     func loadPage() {
+        resetPaging()
         getCharacters.invoke(page: page)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] response in
-                
                 self?.totalPages = response.info.pages
                 self?.page += 1
                 self?.charactersList.append(contentsOf: response.characters)
