@@ -59,8 +59,8 @@ struct FavoritesScreen: View {
         }
         .bottomSheet(
             isPresented: $bottomSheetShown,
-            height: 260,
-            topBarHeight: 0,
+            height: 280,
+            topBarHeight: 10,
             contentBackgroundColor: Color.Primary,
             topBarBackgroundColor: Color.Primary,
             showTopIndicator: false,
