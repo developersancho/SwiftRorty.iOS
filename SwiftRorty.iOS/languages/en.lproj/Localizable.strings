@@ -22,4 +22,5 @@
 "text_gender" = "Gender";
 "text_last_know_location" = "Last Know Location";
 "text_location" = "Location";
+"text_no_data_found" = "No suitable data found.";
 

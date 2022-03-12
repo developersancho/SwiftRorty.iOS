@@ -22,7 +22,17 @@ struct FavoritesScreen: View {
                                 FavoriteRow(dto: character)
                             })
                     }
-                }.padding(10)
+                }
+                .padding(10)
+                .emptyState(viewModel.favorites.isEmpty) {
+                    LazyVStack {
+                        LottieView(name: "empty", loopMode: .loop)
+                            .frame(width: 250, height: 250)
+                            .padding(.init(top: 20, leading: 0, bottom: 10, trailing: 0))
+                        Spacer()
+                        Text(LocalizedStringKey("text_no_data_found")).fontTemplate(AppFontTemplate.heading)
+                    }
+                }
             }
             .background(Color.Background)
             .navigationBarTitleDisplayMode(.inline)

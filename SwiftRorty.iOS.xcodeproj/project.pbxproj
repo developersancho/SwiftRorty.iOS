@@ -56,6 +56,8 @@
 		E26BD3A327D01629006CA548 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A227D01629006CA548 /* DetailHeaderView.swift */; };
 		E26BD3A527D01769006CA548 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A427D01769006CA548 /* DetailContentView.swift */; };
 		E27D2FF027DBE28E00A9B5B8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D2FEF27DBE28E00A9B5B8 /* ViewExtension.swift */; };
+		E27D2FF227DC21C200A9B5B8 /* EmptyStateViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D2FF127DC21C200A9B5B8 /* EmptyStateViewModifier.swift */; };
+		E27D2FF527DC238B00A9B5B8 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = E27D2FF427DC238B00A9B5B8 /* empty.json */; };
 		E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A38BE27C94730005DD497 /* DtoExtension.swift */; };
 		E2900B9627D3F6080055AD96 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */; };
 		E2900B9827D3F6290055AD96 /* VerticalToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */; };
@@ -167,6 +169,8 @@
 		E26BD3A227D01629006CA548 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		E26BD3A427D01769006CA548 /* DetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
 		E27D2FEF27DBE28E00A9B5B8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		E27D2FF127DC21C200A9B5B8 /* EmptyStateViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateViewModifier.swift; sourceTree = "<group>"; };
+		E27D2FF427DC238B00A9B5B8 /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		E28A38BE27C94730005DD497 /* DtoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoExtension.swift; sourceTree = "<group>"; };
 		E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalToggleStyle.swift; sourceTree = "<group>"; };
@@ -274,6 +278,7 @@
 		E2291D3127A5E908006D3FD8 /* SwiftRorty.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E27D2FF327DC237A00A9B5B8 /* lottie */,
 				E222E80027D693A900831125 /* languages */,
 				E2AF0A3F27CD88EB0012EE85 /* extensions */,
 				E232FA1527CD63AB0073FCC8 /* SwiftRorty-iOS-Info.plist */,
@@ -525,8 +530,17 @@
 				E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */,
 				E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */,
 				E2900B9927D3F74A0055AD96 /* ColoredToggleStyle.swift */,
+				E27D2FF127DC21C200A9B5B8 /* EmptyStateViewModifier.swift */,
 			);
 			path = component;
+			sourceTree = "<group>";
+		};
+		E27D2FF327DC237A00A9B5B8 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				E27D2FF427DC238B00A9B5B8 /* empty.json */,
+			);
+			path = lottie;
 			sourceTree = "<group>";
 		};
 		E28A38C027C94B19005DD497 /* network_2 */ = {
@@ -773,6 +787,7 @@
 				E2291D3727A5E909006D3FD8 /* Assets.xcassets in Resources */,
 				E232FA1027CD56780073FCC8 /* Raleway-Medium.ttf in Resources */,
 				E232FA1127CD56780073FCC8 /* Raleway-Bold.ttf in Resources */,
+				E27D2FF527DC238B00A9B5B8 /* empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +978,7 @@
 				E2291D6C27A5F33F006D3FD8 /* CharactersScreen.swift in Sources */,
 				E2D5A98F27C97CEC0017DA32 /* URLRequest.swift in Sources */,
 				E2991ABB27AC771E00BF4B9A /* CharacterInfo.swift in Sources */,
+				E27D2FF227DC21C200A9B5B8 /* EmptyStateViewModifier.swift in Sources */,
 				E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */,
 				E2291D3327A5E908006D3FD8 /* SwiftRorty_iOSApp.swift in Sources */,
 				E2900B9C27D3FF720055AD96 /* UITabBarControllerExtension.swift in Sources */,
