@@ -9,12 +9,11 @@ import SwiftUI
 import Foundation
 
 struct CharacterRow: View {
-    //@Binding
     var dto: CharacterDto
     var callback: ((_ favorState: Bool) -> Void)?
     
-    @State var favor: Bool = false
-    
+    @State var isFavorite: Bool = false
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 8, style: .continuous)
@@ -69,9 +68,9 @@ struct CharacterRow: View {
                         )
                         
                         Button(action: {
-                            favor = !favor
-                            callback?(favor)
-                            //dto.isFavorite = favor
+                            isFavorite = dto.isFavorite
+                            isFavorite = !isFavorite
+                            callback?(isFavorite)
                         }) {
                             if dto.isFavorite {
                                 Image(systemName: "heart.fill").foregroundColor(Color.red)

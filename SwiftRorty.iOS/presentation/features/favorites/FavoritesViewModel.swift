@@ -13,9 +13,10 @@ class FavoritesViewModel: ObservableObject {
     private var getFavorites: GetFavorites
     
     @Published
-    var favorites: [CharacterDto] = []
+    var favorites = [CharacterDto]()
     
     func loadFavorites() {
+        self.favorites.removeAll()
         let list = getFavorites.invoke()
         self.favorites.append(contentsOf: list)
     }

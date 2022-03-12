@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct CharactersScreen: View {
-//    @StateObject
-//    private var viewModel = CharactersViewModel()
     @ObservedObject
     var viewModel = CharactersViewModel()
     
@@ -27,9 +25,7 @@ struct CharactersScreen: View {
                                 label: {
                                     CharacterRow(dto: character) { favorState in
                                         Log.debug("\(favorState)")
-                                        //viewModel.charactersList.first(where: { $0.id == character.id })?.isFavorite = favorState
-                                        viewModel.updateFavor(dto: character)
-                                        //dto?.isFavorite = true
+                                        viewModel.updateFavor(dto: character, state: favorState)
                                     }
                                 })
                         }

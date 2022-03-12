@@ -44,18 +44,23 @@ class CharactersViewModel: ObservableObject {
     @Injected
     private var updateFavorite: UpdateFavorite
     
-    @Published var charactersList : [CharacterDto] = [] {
-        willSet {
-            objectWillChange.send()
-        }
-    }
+    //    @Published var charactersList : [CharacterDto] = [] {
+    //        willSet {
+    //            objectWillChange.send()
+    //        }
+    //    }
+    @Published var charactersList : [CharacterDto] = []
     private var cancelables = [AnyCancellable]()
     private var page = 1
     private var totalPages = 0
     @Published var hasMorePages = false
     
-    init() {
-        
+    func changeIsFavorite(for character: CharacterDto, favor: Bool) {
+        objectWillChange.send() // emits a change from the Store
+        //character.isFavorite = favor
+        self.$charactersList
+            .sink(receiveValue: { _ in self.objectWillChange.send() })
+            .store(in: &cancelables)
     }
     
     func loadPage() {
@@ -78,7 +83,15 @@ class CharactersViewModel: ObservableObject {
         }
     }
     
-    func updateFavor(dto: CharacterDto) {
+    func updateFavor(dto: CharacterDto, state: Bool) {
         updateFavorite.invoke(dto: dto)
+        let index = charactersList.firstIndex(where: { $0.id == dto.id }) ?? 0
+        print(index)
+        charactersList[index].isFavorite = state
+        self.$charactersList
+            .sink(receiveValue: { [self] _ in
+                objectWillChange.send()
+            })
+            .store(in: &cancelables)
     }
 }

@@ -55,6 +55,7 @@
 		E26BD3A127D002B0006CA548 /* GetCharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A027D002B0006CA548 /* GetCharacterDetail.swift */; };
 		E26BD3A327D01629006CA548 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A227D01629006CA548 /* DetailHeaderView.swift */; };
 		E26BD3A527D01769006CA548 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD3A427D01769006CA548 /* DetailContentView.swift */; };
+		E27D2FF027DBE28E00A9B5B8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D2FEF27DBE28E00A9B5B8 /* ViewExtension.swift */; };
 		E28A38BF27C94730005DD497 /* DtoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A38BE27C94730005DD497 /* DtoExtension.swift */; };
 		E2900B9627D3F6080055AD96 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */; };
 		E2900B9827D3F6290055AD96 /* VerticalToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */; };
@@ -165,6 +166,7 @@
 		E26BD3A027D002B0006CA548 /* GetCharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterDetail.swift; sourceTree = "<group>"; };
 		E26BD3A227D01629006CA548 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		E26BD3A427D01769006CA548 /* DetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
+		E27D2FEF27DBE28E00A9B5B8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		E28A38BE27C94730005DD497 /* DtoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoExtension.swift; sourceTree = "<group>"; };
 		E2900B9527D3F6080055AD96 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		E2900B9727D3F6290055AD96 /* VerticalToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalToggleStyle.swift; sourceTree = "<group>"; };
@@ -637,6 +639,7 @@
 				E2B5A95E27D0258200C14287 /* BundleExtension.swift */,
 				E2900B9B27D3FF720055AD96 /* UITabBarControllerExtension.swift */,
 				E222E80627D6980600831125 /* LocalizedStringKeyExtension.swift */,
+				E27D2FEF27DBE28E00A9B5B8 /* ViewExtension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -939,6 +942,7 @@
 				E2B5A95F27D0258200C14287 /* BundleExtension.swift in Sources */,
 				E26BD3A527D01769006CA548 /* DetailContentView.swift in Sources */,
 				E2555C0727A87252007E5266 /* GetCharacters.swift in Sources */,
+				E27D2FF027DBE28E00A9B5B8 /* ViewExtension.swift in Sources */,
 				E2AD77A127CAD8E1006565C2 /* AppModule.swift in Sources */,
 				E2991AB927AC76FA00BF4B9A /* Location.swift in Sources */,
 				E2555BFF27A87181007E5266 /* PageInfo.swift in Sources */,
