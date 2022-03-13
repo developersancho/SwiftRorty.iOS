@@ -76,13 +76,13 @@ Components of data layer include:
 
   -__dto__: Defines dto of ui model, also perform data transformation between ```domain```, ```response``` and ```entity``` models.
 
-  -__local__: Defines the schema of SQLite database.
+  -__local__: Defines the schema of Core Data database.
 
   -__remote__: Defines POJO of network responses.
 
-- __local__: This is responsible for performing caching operations using [Room](https://developer.android.com/training/data-storage/room).
+- __local__: This is responsible for performing caching operations using [Core Data](https://developer.apple.com/documentation/coredata).
 
-- __remote__: This is responsible for performing network operations eg. defining API endpoints using [Retrofit](https://square.github.io/retrofit/).
+- __remote__: This is responsible for performing network operations eg. defining API endpoints using [Combine](https://developer.apple.com/documentation/combine).
 
 - __repository__: Responsible for exposing data to the domain layer.
 
@@ -93,7 +93,7 @@ Components of domain layer include:
 - __usecase__: They enclose a single action, like getting data from a database or posting to a service. They use the repositories to resolve the action they are supposed to do. They usually override the operator ```invoke``` , so they can be called as a function.
 
 ### Presentation
-The ```features``` layer contains components involved in showing information to the user. The main part of this layer are the views(activity, compose) and ViewModels.
+The ```presentation``` layer contains components involved in showing information to the user. The main part of this layer are the Views and ViewModels.
 
 ## Demo Screenshots
 
