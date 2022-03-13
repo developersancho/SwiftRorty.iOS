@@ -14,10 +14,10 @@ extension LocalizedStringKey {
      Return localized value of thisLocalizedStringKey
      */
     public func toString() -> String {
-        //use reflection
+        ///use reflection
         let mirror = Mirror(reflecting: self)
         
-        //try to find 'key' attribute value
+        ///try to find 'key' attribute value
         let attributeLabelAndValue = mirror.children.first { (arg0) -> Bool in
             let (label, _) = arg0
             if(label == "key"){
@@ -27,7 +27,7 @@ extension LocalizedStringKey {
         }
         
         if(attributeLabelAndValue != nil) {
-            //ask for localization of found key via NSLocalizedString
+            ///ask for localization of found key via NSLocalizedString
             return String.localizedStringWithFormat(NSLocalizedString(attributeLabelAndValue!.value as! String, comment: ""));
         }
         else {

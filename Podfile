@@ -8,6 +8,7 @@ target 'SwiftRorty.iOS' do
   # Pods for SwiftRorty.iOS
   pod 'lottie-ios'
   pod "Resolver"
+  pod 'SwiftLint'
 
   target 'SwiftRorty.iOSTests' do
     inherit! :search_paths

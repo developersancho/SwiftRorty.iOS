@@ -22,7 +22,7 @@ struct SettingsScreen: View {
                     Spacer()
                     Toggle("", isOn: $isDarkMode)
                         .toggleStyle(ColoredToggleStyle())
-                        //.toggleStyle(SwitchToggleStyle(tint: .ToggleRed))
+                        // .toggleStyle(SwitchToggleStyle(tint: .ToggleRed))
                         .onChange(of: isDarkMode, perform: { value in
                             Log.debug("isDarkMode => \(isDarkMode)")
                         })
@@ -44,7 +44,7 @@ struct SettingsScreen: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .topLeading) {
-                //Color.Background.edgesIgnoringSafeArea(.bottom)
+                // Color.Background.edgesIgnoringSafeArea(.bottom)
                 Color.Background.ignoresSafeArea()
                 LazyVStack(alignment: .leading) {
                     ScrollView {
