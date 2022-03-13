@@ -5,7 +5,6 @@
 ![Swift](https://img.shields.io/badge/swift-5.5-F05138.svg?style=for-the-badge)
 ![iOS](https://img.shields.io/badge/iOS-15.2-000000?style=for-the-badge)
 ![Xcode](https://img.shields.io/badge/xcode-13.2.1-336ADB?style=for-the-badge)
-[![Tuist badge](https://img.shields.io/badge/Powered%20by-Tuist-blue?style=for-the-badge)](https://tuist.io)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
 <p align="center"> 
@@ -117,7 +116,6 @@ This project uses many of the popular libraries, plugins and tools of the androi
 - [Core Data](https://developer.apple.com/documentation/coredata) - Persist or cache data on a single device, or sync data to multiple devices with CloudKit.
 - [Lottie](https://lottiefiles.com/blog/working-with-lottie/how-to-add-lottie-animation-ios-app-swift) - JSON-based animation file format that enables designers to ship animations on any platform as easily as shipping static assets.
 - [Paging](https://developer.apple.com/documentation) - The Paging Library makes it easier for you to load data gradually and gracefully within your app's List.
-- [Tuist](https://tuist.io/) - Tuist is a command line tool (CLI) that aims to facilitate the generation, maintenance, and interaction with Xcode projects.
 
 ### Code Analyze Tools
 - [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions.
