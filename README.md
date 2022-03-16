@@ -2,10 +2,11 @@
 ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 ![Xcode](https://img.shields.io/badge/xcode-336ADB?style=for-the-badge&logo=xcode&logoColor=white)
 [![CodeStyle](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg?style=for-the-badge)](https://github.com/realm/SwiftLint)
-![Swift](https://img.shields.io/badge/swift-5.5-F05138.svg?style=for-the-badge)
+[![Swift](https://img.shields.io/badge/Swift-5.5-F05138?style=for-the-badge&logo=swift)](https://swift.org)
 ![iOS](https://img.shields.io/badge/iOS-15.2-000000?style=for-the-badge)
 ![Xcode](https://img.shields.io/badge/xcode-13.2.1-336ADB?style=for-the-badge)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
+
 
 <p align="center"> 
    <img height="250" src="https://user-images.githubusercontent.com/30066734/157981506-56f30ee4-5227-4c04-9b2d-a265cce45b23.png"/> 
