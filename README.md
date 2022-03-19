@@ -2,10 +2,11 @@
 ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 ![Xcode](https://img.shields.io/badge/xcode-336ADB?style=for-the-badge&logo=xcode&logoColor=white)
 [![CodeStyle](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg?style=for-the-badge)](https://github.com/realm/SwiftLint)
-![Swift](https://img.shields.io/badge/swift-5.5-F05138.svg?style=for-the-badge)
+[![Swift](https://img.shields.io/badge/Swift-5.5-F05138?style=for-the-badge&logo=swift)](https://swift.org)
 ![iOS](https://img.shields.io/badge/iOS-15.2-000000?style=for-the-badge)
 ![Xcode](https://img.shields.io/badge/xcode-13.2.1-336ADB?style=for-the-badge)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
+
 
 <p align="center"> 
    <img height="250" src="https://user-images.githubusercontent.com/30066734/157981506-56f30ee4-5227-4c04-9b2d-a265cce45b23.png"/> 
@@ -76,13 +77,13 @@ Components of data layer include:
 
   -__dto__: Defines dto of ui model, also perform data transformation between ```domain```, ```response``` and ```entity``` models.
 
-  -__local__: Defines the schema of SQLite database.
+  -__local__: Defines the schema of Core Data database.
 
   -__remote__: Defines POJO of network responses.
 
-- __local__: This is responsible for performing caching operations using [Room](https://developer.android.com/training/data-storage/room).
+- __local__: This is responsible for performing caching operations using [Core Data](https://developer.apple.com/documentation/coredata).
 
-- __remote__: This is responsible for performing network operations eg. defining API endpoints using [Retrofit](https://square.github.io/retrofit/).
+- __remote__: This is responsible for performing network operations eg. defining API endpoints using [Combine](https://developer.apple.com/documentation/combine).
 
 - __repository__: Responsible for exposing data to the domain layer.
 
@@ -93,7 +94,7 @@ Components of domain layer include:
 - __usecase__: They enclose a single action, like getting data from a database or posting to a service. They use the repositories to resolve the action they are supposed to do. They usually override the operator ```invoke``` , so they can be called as a function.
 
 ### Presentation
-The ```features``` layer contains components involved in showing information to the user. The main part of this layer are the views(activity, compose) and ViewModels.
+The ```presentation``` layer contains components involved in showing information to the user. The main part of this layer are the Views and ViewModels.
 
 ## Demo Screenshots
 
