@@ -29,10 +29,10 @@
 		E232FA1027CD56780073FCC8 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E232FA0C27CD56780073FCC8 /* Raleway-Medium.ttf */; };
 		E232FA1127CD56780073FCC8 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E232FA0D27CD56780073FCC8 /* Raleway-Bold.ttf */; };
 		E232FA1227CD56780073FCC8 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E232FA0E27CD56780073FCC8 /* Raleway-Regular.ttf */; };
-		E232FA1727CD6C9D0073FCC8 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1627CD6C9D0073FCC8 /* AppFont.swift */; };
-		E232FA1927CD6D9B0073FCC8 /* FontTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */; };
-		E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */; };
-		E232FA1D27CD6DF00073FCC8 /* AppFontTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */; };
+		E232FA1727CD6C9D0073FCC8 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1627CD6C9D0073FCC8 /* FontType.swift */; };
+		E232FA1927CD6D9B0073FCC8 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1827CD6D9B0073FCC8 /* FontStyle.swift */; };
+		E232FA1B27CD6DC10073FCC8 /* FontViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1A27CD6DC10073FCC8 /* FontViewModifier.swift */; };
+		E232FA1D27CD6DF00073FCC8 /* RortyFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FA1C27CD6DF00073FCC8 /* RortyFont.swift */; };
 		E249C91627D944C700B6D75E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C91527D944C700B6D75E /* Logger.swift */; };
 		E249C91827D9456C00B6D75E /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C91727D9456C00B6D75E /* FavoriteRepository.swift */; };
 		E2512DAC27C82A5E00FC6129 /* LocationDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2512DAB27C82A5E00FC6129 /* LocationDto.swift */; };
@@ -146,10 +146,10 @@
 		E232FA0D27CD56780073FCC8 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		E232FA0E27CD56780073FCC8 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		E232FA1527CD63AB0073FCC8 /* SwiftRorty-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftRorty-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
-		E232FA1627CD6C9D0073FCC8 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
-		E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTemplate.swift; sourceTree = "<group>"; };
-		E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTemplateModifier.swift; sourceTree = "<group>"; };
-		E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontTemplate.swift; sourceTree = "<group>"; };
+		E232FA1627CD6C9D0073FCC8 /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
+		E232FA1827CD6D9B0073FCC8 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
+		E232FA1A27CD6DC10073FCC8 /* FontViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewModifier.swift; sourceTree = "<group>"; };
+		E232FA1C27CD6DF00073FCC8 /* RortyFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RortyFont.swift; sourceTree = "<group>"; };
 		E249C91527D944C700B6D75E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E249C91727D9456C00B6D75E /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
 		E2512DAB27C82A5E00FC6129 /* LocationDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDto.swift; sourceTree = "<group>"; };
@@ -488,10 +488,10 @@
 			isa = PBXGroup;
 			children = (
 				E2AF0A3E27CD74000012EE85 /* files */,
-				E232FA1627CD6C9D0073FCC8 /* AppFont.swift */,
-				E232FA1827CD6D9B0073FCC8 /* FontTemplate.swift */,
-				E232FA1A27CD6DC10073FCC8 /* FontTemplateModifier.swift */,
-				E232FA1C27CD6DF00073FCC8 /* AppFontTemplate.swift */,
+				E232FA1627CD6C9D0073FCC8 /* FontType.swift */,
+				E232FA1827CD6D9B0073FCC8 /* FontStyle.swift */,
+				E232FA1A27CD6DC10073FCC8 /* FontViewModifier.swift */,
+				E232FA1C27CD6DF00073FCC8 /* RortyFont.swift */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -970,23 +970,23 @@
 				E232FA0627CD4D570073FCC8 /* Endpoint.swift in Sources */,
 				E2CAB79027DA707800C8BFFB /* UpdateFavorite.swift in Sources */,
 				E2D5A98327C96E3E0017DA32 /* APIMethod.swift in Sources */,
-				E232FA1B27CD6DC10073FCC8 /* FontTemplateModifier.swift in Sources */,
+				E232FA1B27CD6DC10073FCC8 /* FontViewModifier.swift in Sources */,
 				E222E80A27D6A26300831125 /* RortyDatabase.xcdatamodeld in Sources */,
 				E2900B9827D3F6290055AD96 /* VerticalToggleStyle.swift in Sources */,
 				E2D5A99127C9986C0017DA32 /* CharacterRow.swift in Sources */,
 				E26BD39F27CFFE51006CA548 /* DetailViewModel.swift in Sources */,
-				E232FA1727CD6C9D0073FCC8 /* AppFont.swift in Sources */,
+				E232FA1727CD6C9D0073FCC8 /* FontType.swift in Sources */,
 				E2991AAF27AC740800BF4B9A /* LocationInfo.swift in Sources */,
 				E2291D6E27A5F362006D3FD8 /* CharactersViewModel.swift in Sources */,
 				E232FA0927CD4DBF0073FCC8 /* Color.swift in Sources */,
 				E2900B9627D3F6080055AD96 /* CheckboxToggleStyle.swift in Sources */,
 				E2555C0B27A872A2007E5266 /* FavoritesViewModel.swift in Sources */,
-				E232FA1927CD6D9B0073FCC8 /* FontTemplate.swift in Sources */,
+				E232FA1927CD6D9B0073FCC8 /* FontStyle.swift in Sources */,
 				E2512DB227C830FF00FC6129 /* StringExtension.swift in Sources */,
 				E2555C1127A872F2007E5266 /* HomeScreen.swift in Sources */,
 				E2F4382627DD2AE900FBE6B7 /* RoundedCorner.swift in Sources */,
 				E2F4382C27DD2E8B00FBE6B7 /* DeleteFavorite.swift in Sources */,
-				E232FA1D27CD6DF00073FCC8 /* AppFontTemplate.swift in Sources */,
+				E232FA1D27CD6DF00073FCC8 /* RortyFont.swift in Sources */,
 				E2991AB127AC760E00BF4B9A /* LocationResponse.swift in Sources */,
 				E249C91827D9456C00B6D75E /* FavoriteRepository.swift in Sources */,
 				E2555C0527A87238007E5266 /* CharacterRepository.swift in Sources */,

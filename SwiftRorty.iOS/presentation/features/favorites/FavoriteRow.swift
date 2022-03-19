@@ -31,10 +31,10 @@ struct FavoriteRow: View {
             }
             VStack(alignment: .leading, spacing: 8) {
                 Text("\(dto.name ?? "Loading...")")
-                    .fontTemplate(AppFontTemplate.body2)
+                    .fontStyle(RortyFont.body2)
                     .redacted(reason: dto.name == nil ? .placeholder : [])
                 Text("\(dto.species ?? "")")
-                    .fontTemplate(AppFontTemplate.body2)
+                    .fontStyle(RortyFont.body2)
                     .redacted(reason: dto.species == nil ? .placeholder : [])
                 HStack {
                     LazyHStack {
@@ -53,7 +53,7 @@ struct FavoriteRow: View {
                         }
                         
                         Text("\(dto.status?.rawValue ?? "")")
-                            .fontTemplate(AppFontTemplate.body3)
+                            .fontStyle(RortyFont.body3)
                             .redacted(reason: dto.status?.rawValue == nil ? .placeholder : [])
                     }.frame(
                         maxWidth: .infinity,

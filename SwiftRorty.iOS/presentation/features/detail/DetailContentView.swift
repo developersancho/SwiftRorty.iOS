@@ -21,11 +21,11 @@ struct DetailContentView: View {
                 ForEach(contents, id: \.id) { content in
                     HStack(alignment: .center) {
                         Text(content.key!)
-                            .fontTemplate(AppFontTemplate.body4)
+                            .fontStyle(RortyFont.body4)
                             .redacted(reason: content.key == nil ? .placeholder : [])
                         Spacer()
                         Text(content.value!)
-                            .fontTemplate(AppFontTemplate.body2)
+                            .fontStyle(RortyFont.body2)
                             .redacted(reason: content.value == nil ? .placeholder : [])
                     }
                     Divider()

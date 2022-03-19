@@ -30,7 +30,7 @@ struct FavoritesScreen: View {
                                     self.selectedDto = character
                                 })
                             })
-                            
+                        
                     }
                     
                 }
@@ -41,7 +41,7 @@ struct FavoritesScreen: View {
                             .frame(width: 250, height: 250)
                             .padding(.init(top: 20, leading: 0, bottom: 10, trailing: 0))
                         Spacer()
-                        Text(LocalizedStringKey("text_no_data_found")).fontTemplate(AppFontTemplate.heading)
+                        Text(LocalizedStringKey("text_no_data_found")).fontStyle(RortyFont.heading)
                     }
                 }
             }
@@ -50,7 +50,7 @@ struct FavoritesScreen: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text(LocalizedStringKey("toolbar_favorites_title")).fontTemplate(AppFontTemplate.title)
+                        Text(LocalizedStringKey("toolbar_favorites_title")).fontStyle(RortyFont.title)
                     }
                 }
             }.onAppear(perform: {
@@ -69,12 +69,12 @@ struct FavoritesScreen: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text(LocalizedStringKey("text_favor_delete"))
-                                .fontTemplate(AppFontTemplate.heading2)
+                                .fontStyle(RortyFont.heading2)
                             Text("\(selectedDto.name ?? "Loading...")")
-                                .fontTemplate(AppFontTemplate.body2)
+                                .fontStyle(RortyFont.body2)
                         }
                         Spacer()
-                        Button ( action: { self.bottomSheetShown.toggle() }) {
+                        Button( action: { self.bottomSheetShown.toggle() }) {
                             Label {
                                 Text(LocalizedStringKey("text_cancel"))
                                     .foregroundColor(Color.Text)
@@ -89,7 +89,7 @@ struct FavoritesScreen: View {
                     Text("text_delete_favor_description \(selectedDto.name ?? "...")")
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
-                        .fontTemplate(AppFontTemplate.body6)
+                        .fontStyle(RortyFont.body6)
                     
                     Button(LocalizedStringKey("text_approve_remove"), action: {
                         self.bottomSheetShown.toggle()
@@ -132,7 +132,7 @@ struct FavoritesScreen: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 VStack {
-                    Text(LocalizedStringKey("toolbar_favorites_title")).fontTemplate(AppFontTemplate.title)
+                    Text(LocalizedStringKey("toolbar_favorites_title")).fontStyle(RortyFont.title)
                 }
             }
         }.onAppear(perform: {

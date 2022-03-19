@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-public class FontTemplate {
+public class FontStyle {
     private var id: UUID
     public var font: Font
     public var weight: Font.Weight

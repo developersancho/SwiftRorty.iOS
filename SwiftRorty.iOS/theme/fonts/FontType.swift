@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import SwiftUI
 
-enum AppFont: String {
+enum FontType: String {
     case regular = "Raleway-Regular"
     case medium = "Raleway-Medium"
     case semi_bold = "Raleway-SemiBold"

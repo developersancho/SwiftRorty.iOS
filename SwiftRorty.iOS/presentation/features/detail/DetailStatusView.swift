@@ -27,7 +27,7 @@ struct DetailStatusView: View {
             }
             
             Text("\(dto?.status?.rawValue ?? "")")
-                .fontTemplate(AppFontTemplate.body3)
+                .fontStyle(RortyFont.body3)
                 .redacted(reason: dto?.status?.rawValue == nil ? .placeholder : [])
         }.frame(
             maxWidth: .infinity,
